@@ -9,9 +9,9 @@
 
 | Page Number | Name                                                 | Description                                                                    |
 | ----------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
-| 0           | [System Configuration 0](#page:system-configuration) | Store System Specifig Data e.g. Bluetooth Name, Advertisment Time, etc.        |
+| 0           | [System Configuration 0](#page:system-configuration) | Store System Specific Data e.g. Bluetooth Name, Advertisement Time, etc.       |
 | 4           | [Product Data](#page:product-data)                   | Store Product Data e.g. Serial Number                                          |
-| 5           | [Statistic](#page:statistic)                         | Store Statistic Data e.g. Power on/off cylces etc.                             |
+| 5           | [Statistic](#page:statistic)                         | Store Statistic Data e.g. Power on/off cycles etc.                             |
 | 8           | [Calibration 0](#page:calibration)                   | Store configuration data like k and d values to derive SI value from ADC value |
 
 <a name="page:system-configuration"></a>
@@ -20,7 +20,7 @@
 
 | Byte | Description                                                   | Format         |
 | ---- | ------------------------------------------------------------- | -------------- |
-| 0    | Init (0xAC=Init, 0xCA=Locked, else Uninit)                    | -              |
+| 0    | Init (0xAC=Init, 0xCA=Locked, else Uninitialized)             | -              |
 | 1    | Radio Name - 0                                                | ASCII - String |
 | 2    | Radio Name - 1                                                | ASCII - String |
 | 3    | Radio Name - 2                                                | ASCII - String |
