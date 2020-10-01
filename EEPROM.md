@@ -42,7 +42,7 @@
 | 19   | Advertisement Time 2 in ms (Energy Mode 2) - 0 (LSB)          | unsigned       |
 | 20   | Advertisement Time 2 in ms (Energy Mode 2) - 1 (MSB)          | unsigned       |
 
-<a name="page:protuct-data"></a>
+<a name="page:product-data"></a>
 
 #### Page `Product Data`
 
