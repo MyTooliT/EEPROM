@@ -10,4 +10,3 @@ This file contains the momentary used values of the EEPROM from the STH.
 | `0x4`       | Product Data           |
 | `0x5`       | Statistic              |
 | `0x8`       | Calibration 0          |
-
