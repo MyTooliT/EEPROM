@@ -8,7 +8,7 @@ This file contains the momentary used values of the EEPROM from the STH.
 | ----------- | ---------------------------------------------------- |
 | `0x0`       | [System Configuration 0](#page:system-configuration) |
 | `0x4`       | [Product Data](#page:product-data)                   |
-| `0x5`       | Statistic                                            |
+| `0x5`       | [Statistic](#page:statistic)                         |
 | `0x8`       | Calibration 0                                        |
 
 <a name="page:system-configuration"></a>
@@ -43,3 +43,17 @@ This file contains the momentary used values of the EEPROM from the STH.
 | Serial Number                      | 32      | 32     | True      | 0     | UTF8     | Manufacture Serial Number (Derived from ISBN); Product Group - Subgroup - Manufacture ID - Product Number - Check Digit |
 | Name                               | 64      | 128    | True      | 0     | UTF8     | Manufacture Name; This may extend Serial Number, supports URL, extend definition, etc. |
 | OEM Free Use                       | 192     | 64     | True      | 0     | -        | Supports Manufacture Specific information in format that is free to choose |
+
+<a name="page:statistic"></a>
+
+### Page `Statistic`
+
+| Name                                       | Address | Length | Read Only | Value    | Unit    | Format   | Description                                                  |
+| ------------------------------------------ | ------- | ------ | --------- | -------- | ------- | -------- | ------------------------------------------------------------ |
+| Power ON Cycles                            | 0       | 4      | True      | 0        | -       | unsigned | Power On Cycles since first reset(Note that a resets also counts as power on) |
+| Power OFF Cycles                           | 4       | 4      | True      | 0        | -       | unsigned | Power Off Cycles since first reset                           |
+| Operating Time since first power On        | 8       | 4      | True      | 0        | seconds | unsigned | Operating Time since first power On in seconds               |
+| Under Voltage Counter since first power On | 12      | 4      | True      | 0        | -       | unsigned | Counts of under voltages that yields into turn off state(Brown Out) |
+| Watchdog Reset Counter                     | 16      | 4      | True      | 0        | -       | unsigned | Watchdog Resets since first power on                         |
+| Production Date                            | 20      | 8      | False     | 20191216 | date    | ASCII    | Production Date (EEPROM Production Write) in the format yyyymmdd (year month day) |
+| Batch Number                               | 28      | 4      | True      | 112      | -       | unsigned | Consecutive number for manufactured devices                  |
