@@ -7,7 +7,7 @@ This file contains the momentary used values of the EEPROM from the STH.
 | Page Number | Page Name                                            |
 | ----------- | ---------------------------------------------------- |
 | `0x0`       | [System Configuration 0](#page:system-configuration) |
-| `0x4`       | Product Data                                         |
+| `0x4`       | [Product Data](#page:product-data)                   |
 | `0x5`       | Statistic                                            |
 | `0x8`       | Calibration 0                                        |
 
@@ -23,3 +23,23 @@ This file contains the momentary used values of the EEPROM from the STH.
 | Advertisement Time 1 | 13      | 2      | False     | 2000      | ms   | unsigned | Bluetooth Advertisement Time in ms for Sleep Mode 1          |
 | Sleep time 2         | 15      | 4      | False     | 259200000 | ms   | unsinged | Time to from entering Sleep Mode 1 to Sleep Mode 2 in ms     |
 | Advertisement Time 2 | 19      | 2      | False     | 4000      | ms   | unsinged | Bluetooth Advertisement Time in ms for Sleep Mode 2          |
+
+<a name="page:product-data"></a>
+
+### Page `Product Data`
+
+| Name                               | Address | Length | Read Only | Value | Format   | Description                                                  |
+| ---------------------------------- | ------- | ------ | --------- | ----- | -------- | ------------------------------------------------------------ |
+| GTIN                               | 0       | 8      | True      | 0     | unsigned | Global Trade Identification Number (GTIN)                    |
+| Hardware Revision - Reserved       | 8       | 5      | True      | 0     | unsigned | Hardware Revision Number - Reserved                          |
+| Hardware Revision - Major          | 13      | 1      | False     | 1     | unsigned | Hardware Revision Number - Major                             |
+| Hardware Revision - Minor          | 14      | 1      | False     | 3     | unsigned | Hardware Revision Number - Minor                             |
+| Hardware Revision - Build          | 15      | 1      | False     | 4     | unsigned | Hardware Revision Number - Build                             |
+| Firmware Version Number - Reserved | 16      | 5      | True      | 0     | unsigned | Firmware Version Number - Reserved                           |
+| Firmware Version Number - Major    | 21      | 1      | False     | 2     | unsigned | Firmware Version Number - Major                              |
+| Firmware Version Number - Minor    | 22      | 1      | False     | 1     | unsigned | Firmware Version Number - Minor                              |
+| Firmware Version Number - Build    | 23      | 1      | False     | 9     | unsigned | Firmware Version Number - Build                              |
+| Release Name                       | 24      | 8      | False     | Tanja | UTF8     | Release Name, represents Major - Minor                       |
+| Serial Number                      | 32      | 32     | True      | 0     | UTF8     | Manufacture Serial Number (Derived from ISBN); Product Group - Subgroup - Manufacture ID - Product Number - Check Digit |
+| Name                               | 64      | 128    | True      | 0     | UTF8     | Manufacture Name; This may extend Serial Number, supports URL, extend definition, etc. |
+| OEM Free Use                       | 192     | 64     | True      | 0     | -        | Supports Manufacture Specific information in format that is free to choose |
