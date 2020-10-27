@@ -21,8 +21,8 @@ This file contains the momentary used values of the EEPROM from the STH.
 | Radio Name           | 1       | 8      | False     | BBCB4878  |      | UTF8     | Defines Bluetooth advertisement name                             |
 | Sleep Time 1         | 9       | 4      | False     | 300000    | ms   | unsigned | Time to from disconnect/power on to Sleep Mode 1 in ms           |
 | Advertisement Time 1 | 13      | 2      | False     | 2000      | ms   | unsigned | Bluetooth Advertisement Time in ms for Sleep Mode 1              |
-| Sleep time 2         | 15      | 4      | False     | 259200000 | ms   | unsinged | Time to from entering Sleep Mode 1 to Sleep Mode 2 in ms         |
-| Advertisement Time 2 | 19      | 2      | False     | 4000      | ms   | unsinged | Bluetooth Advertisement Time in ms for Sleep Mode 2              |
+| Sleep time 2         | 15      | 4      | False     | 259200000 | ms   | unsigned | Time to from entering Sleep Mode 1 to Sleep Mode 2 in ms         |
+| Advertisement Time 2 | 19      | 2      | False     | 4000      | ms   | unsigned | Bluetooth Advertisement Time in ms for Sleep Mode 2              |
 
 <a name="page:product-data"></a>
 
