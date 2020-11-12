@@ -15,14 +15,14 @@ This file contains the default values of the STH EEPROM.
 
 ### Page `System Configuration`
 
-| Name                 | Address | Length | Read Only | Value     | Unit | Format   | Description                                                      |
-| -------------------- | ------- | ------ | --------- | --------- | ---- | -------- | ---------------------------------------------------------------- |
-| EEPROM Status        | 0       | 1      | True      | [0xac]    |      |          | Determines Initialised EERPOM iff 0xAC or locked EEPROM iff 0xCA |
-| Radio Name           | 1       | 8      | False     | BBCB4878  |      | UTF8     | Defines Bluetooth advertisement name                             |
-| Sleep Time 1         | 9       | 4      | False     | 300000    | ms   | unsigned | Time to from disconnect/power on to Sleep Mode 1 in ms           |
-| Advertisement Time 1 | 13      | 2      | False     | 2000      | ms   | unsigned | Bluetooth Advertisement Time in ms for Sleep Mode 1              |
-| Sleep time 2         | 15      | 4      | False     | 259200000 | ms   | unsigned | Time to from entering Sleep Mode 1 to Sleep Mode 2 in ms         |
-| Advertisement Time 2 | 19      | 2      | False     | 4000      | ms   | unsigned | Bluetooth Advertisement Time in ms for Sleep Mode 2              |
+| Name                 | Address | Length | Read Only | Value                                | Unit | Format   | Description                                              |
+| -------------------- | ------- | ------ | --------- | ------------------------------------ | ---- | -------- | -------------------------------------------------------- |
+| EEPROM Status        | 0       | 1      | True      | `0xac`                               | -    |          | Value for initialised EERPOM                             |
+| STH Name             | 1       | 8      | False     | Base64 encoded Bluetooth MAC address | -    | UTF-8    | Bluetooth advertisement name                             |
+| Sleep Time 1         | 9       | 4      | False     | 300000                               | ms   | Unsigned | Time to from disconnect/power on to Sleep Mode           |
+| Advertisement Time 1 | 13      | 2      | False     | 2000                                 | ms   | Unsigned | Bluetooth advertisement time for Sleep Mode 1            |
+| Sleep time 2         | 15      | 4      | False     | 259200000                            | ms   | Unsigned | Time to from entering Sleep Mode 1 to Sleep Mode 2 in ms |
+| Advertisement Time 2 | 19      | 2      | False     | 4000                                 | ms   | Unsigned | Bluetooth advertisement time for Sleep Mode 2            |
 
 <a name="page:product-data"></a>
 
@@ -31,7 +31,6 @@ This file contains the default values of the STH EEPROM.
 | Name                               | Address | Length | Read Only | Value | Format   | Description                                                                                                             |
 | ---------------------------------- | ------- | ------ | --------- | ----- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
 | GTIN                               | 0       | 8      | True      | 0     | unsigned | Global Trade Identification Number (GTIN)                                                                               |
-| Hardware Revision - Reserved       | 8       | 5      | True      | 0     | unsigned | Hardware Revision Number - Reserved                                                                                     |
 | Hardware Revision - Major          | 13      | 1      | False     | 1     | unsigned | Hardware Revision Number - Major                                                                                        |
 | Hardware Revision - Minor          | 14      | 1      | False     | 3     | unsigned | Hardware Revision Number - Minor                                                                                        |
 | Hardware Revision - Build          | 15      | 1      | False     | 4     | unsigned | Hardware Revision Number - Build                                                                                        |
