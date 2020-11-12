@@ -28,20 +28,24 @@ This file contains the default values of the STH EEPROM.
 
 ### Page `Product Data`
 
-| Name                               | Address | Length | Read Only | Value | Format   | Description                                                                                                             |
-| ---------------------------------- | ------- | ------ | --------- | ----- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| GTIN                               | 0       | 8      | True      | 0     | unsigned | Global Trade Identification Number (GTIN)                                                                               |
-| Hardware Revision - Major          | 13      | 1      | False     | 1     | unsigned | Hardware Revision Number - Major                                                                                        |
-| Hardware Revision - Minor          | 14      | 1      | False     | 3     | unsigned | Hardware Revision Number - Minor                                                                                        |
-| Hardware Revision - Build          | 15      | 1      | False     | 4     | unsigned | Hardware Revision Number - Build                                                                                        |
-| Firmware Version Number - Reserved | 16      | 5      | True      | 0     | unsigned | Firmware Version Number - Reserved                                                                                      |
-| Firmware Version Number - Major    | 21      | 1      | False     | 2     | unsigned | Firmware Version Number - Major                                                                                         |
-| Firmware Version Number - Minor    | 22      | 1      | False     | 1     | unsigned | Firmware Version Number - Minor                                                                                         |
-| Firmware Version Number - Build    | 23      | 1      | False     | 9     | unsigned | Firmware Version Number - Build                                                                                         |
-| Release Name                       | 24      | 8      | False     | Tanja | UTF-8    | Release Name, represents Major - Minor                                                                                  |
-| Serial Number                      | 32      | 32     | True      | 0     | UTF-8    | Manufacture Serial Number (Derived from ISBN); Product Group - Subgroup - Manufacture ID - Product Number - Check Digit |
-| Name                               | 64      | 128    | True      | 0     | UTF-8    | Manufacture Name; This may extend Serial Number, supports URL, extend definition, etc.                                  |
-| OEM Free Use                       | 192     | 64     | True      | 0     | -        | Supports Manufacture Specific information in format that is free to choose                                              |
+| Name                            | Address | Length | Read Only | Value | Format   | Description                                          |
+| ------------------------------- | ------- | ------ | --------- | ----- | -------- | ---------------------------------------------------- |
+| GTIN                            | 0       | 8      | True      | 0     | Unsigned | Global Trade Identification Number                   |
+| Hardware Revision - Major       | 13      | 1      | False     | -     | Unsigned | [Major Hardware Revision](#hardware-revision)        |
+| Hardware Revision - Minor       | 14      | 1      | False     | -     | Unsigned | [Minor Hardware Revision Number](#hardware-revision) |
+| Hardware Revision - Build       | 15      | 1      | False     | -     | Unsigned | [Build Hardware Revision Number](#hardware-revision) |
+| Firmware Version Number - Major | 21      | 1      | False     | -     | Unsigned | [Major Firmware Version Number](#software-version)   |
+| Firmware Version Number - Minor | 22      | 1      | False     | -     | Unsigned | [Minor Firmware Version Number](#software-version)   |
+| Firmware Version Number - Build | 23      | 1      | False     | -     | Unsigned | [Build Firmware Version Number](#software-version)   |
+| Release Name                    | 24      | 8      | False     | Tanja | UTF-8    | Code name of the STH software release                |
+| Serial Number                   | 32      | 32     | True      | 0     | UTF-8    |                                                      |
+| Name                            | 64      | 128    | True      | 0     | UTF-8    |                                                      |
+| OEM Free Use                    | 192     | 64     | True      | 0     | -        |                                                      |
+
+#### Version Numbers
+
+- <a name="hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc](https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml)
+- <a name="firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
 
 <a name="page:statistic"></a>
 
