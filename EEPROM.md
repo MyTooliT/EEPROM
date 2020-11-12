@@ -18,29 +18,29 @@
 
 #### Page `System Configuration`
 
-| Byte | Name                 | Comment                                                                 | Format   | Unit |
-| ---- | -------------------- | ----------------------------------------------------------------------- | -------- | ---- |
-| 0    | Init                 | • `0xAC`: Init <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
-| 1    | Radio Name 0         |                                                                         | ASCII    | -    |
-| 2    | Radio Name 1         |                                                                         | ASCII    | -    |
-| 3    | Radio Name 2         |                                                                         | ASCII    | -    |
-| 4    | Radio Name 3         |                                                                         | ASCII    | -    |
-| 5    | Radio Name 4         |                                                                         | ASCII    | -    |
-| 6    | Radio Name 5         |                                                                         | ASCII    | -    |
-| 7    | Radio Name 6         |                                                                         | ASCII    | -    |
-| 8    | Radio Name 7         |                                                                         | ASCII    | -    |
-| 9    | Sleep Time 1         | LSB                                                                     | Unsigned | ms   |
-| 10   | Sleep Time 1         |                                                                         | Unsigned | ms   |
-| 11   | Sleep Time 1         |                                                                         | Unsigned | ms   |
-| 12   | Sleep Time 1         | MSB                                                                     | Unsigned | ms   |
-| 13   | Advertisement Time 1 | LSB                                                                     | Unsigned | ms   |
-| 14   | Advertisement Time 1 | MSB                                                                     | Unsigned | ms   |
-| 15   | Sleep Time 2         | LSB                                                                     | Unsigned | ms   |
-| 16   | Sleep Time 2         |                                                                         | Unsigned | ms   |
-| 17   | Sleep Time 2         |                                                                         | Unsigned | ms   |
-| 18   | Sleep Time 2         | MSB                                                                     | Unsigned | ms   |
-| 19   | Advertisement Time 2 | LSB                                                                     | Unsigned | ms   |
-| 20   | Advertisement Time 2 | MSB                                                                     | Unsigned | ms   |
+| Byte | Name                 | Comment                                                                        | Format   | Unit |
+| ---- | -------------------- | ------------------------------------------------------------------------------ | -------- | ---- |
+| 0    | Init                 | • `0xAC`: Initialized <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
+| 1    | Radio Name 0         |                                                                                | ASCII    | -    |
+| 2    | Radio Name 1         |                                                                                | ASCII    | -    |
+| 3    | Radio Name 2         |                                                                                | ASCII    | -    |
+| 4    | Radio Name 3         |                                                                                | ASCII    | -    |
+| 5    | Radio Name 4         |                                                                                | ASCII    | -    |
+| 6    | Radio Name 5         |                                                                                | ASCII    | -    |
+| 7    | Radio Name 6         |                                                                                | ASCII    | -    |
+| 8    | Radio Name 7         |                                                                                | ASCII    | -    |
+| 9    | Sleep Time 1         | LSB                                                                            | Unsigned | ms   |
+| 10   | Sleep Time 1         |                                                                                | Unsigned | ms   |
+| 11   | Sleep Time 1         |                                                                                | Unsigned | ms   |
+| 12   | Sleep Time 1         | MSB                                                                            | Unsigned | ms   |
+| 13   | Advertisement Time 1 | LSB                                                                            | Unsigned | ms   |
+| 14   | Advertisement Time 1 | MSB                                                                            | Unsigned | ms   |
+| 15   | Sleep Time 2         | LSB                                                                            | Unsigned | ms   |
+| 16   | Sleep Time 2         |                                                                                | Unsigned | ms   |
+| 17   | Sleep Time 2         |                                                                                | Unsigned | ms   |
+| 18   | Sleep Time 2         | MSB                                                                            | Unsigned | ms   |
+| 19   | Advertisement Time 2 | LSB                                                                            | Unsigned | ms   |
+| 20   | Advertisement Time 2 | MSB                                                                            | Unsigned | ms   |
 
 ##### Sleep & Advertisement Times
 
@@ -81,9 +81,9 @@
 | 21        | Firmware Version - Major                  |          | Unsigned |
 | 22        | Firmware Version - Minor                  |          | Unsigned |
 | 23        | Firmware Version - Build                  |          | Unsigned |
-| 24 - 31   | Release Name                              | 8 Byte   | UTF8     |
-| 32 - 63   | Serial Number                             | 32 Byte  | UTF8     |
-| 64 - 191  | Name                                      | 128 Byte | UTF8     |
+| 24 - 31   | Release Name                              | 8 Byte   | UTF-8    |
+| 32 - 63   | Serial Number                             | 32 Byte  | UTF-8    |
+| 64 - 191  | Name                                      | 128 Byte | UTF-8    |
 | 192 - 255 | OEM Free Use                              | 64 Byte  | -        |
 
 <a name="page:statistic"></a>
