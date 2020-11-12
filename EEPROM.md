@@ -7,12 +7,12 @@
 
 ### Pages:
 
-| Page Number | Name                                                 | Description                                                                    |
-| ----------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
-| 0           | [System Configuration 0](#page:system-configuration) | Store system specific data e.g. Bluetooth name, advertisement time, etc.       |
-| 4           | [Product Data](#page:product-data)                   | Store product data e.g. serial number                                          |
-| 5           | [Statistic](#page:statistic)                         | Store Statistic data e.g. power on/off cycles etc.                             |
-| 8           | [Calibration 0](#page:calibration)                   | Store configuration data like k and d values to derive SI value from ADC value |
+| Page Number | Name                                                 | Description                                                                                         |
+| ----------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 0           | [System Configuration 0](#page:system-configuration) | Store system specific data e.g. Bluetooth name, advertisement time, etc.                            |
+| 4           | [Product Data](#page:product-data)                   | Store product data e.g. serial number                                                               |
+| 5           | [Statistic](#page:statistic)                         | Store Statistic data e.g. power on/off cycles etc.                                                  |
+| 8           | [Calibration 0](#page:calibration)                   | Store configuration data like Slope (`k`) and offset (`d`) values to derive SI value from ADC value |
 
 <a name="page:system-configuration"></a>
 
@@ -199,3 +199,11 @@
 | 69   | Temperature 3: Offset        |         | Float  |
 | 70   | Temperature 3: Offset        |         | Float  |
 | 71   | Temperature 3: Offset        | MSB     | Float  |
+
+##### Slope & Offset
+
+The values slope (`k`) and offset (`d`) specify the values in the equation for the [linear function](https://en.m.wikipedia.org/wiki/Linear_function):
+
+$$
+y = f(x) = k·x + d
+$$
