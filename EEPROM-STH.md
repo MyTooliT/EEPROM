@@ -53,7 +53,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 | Name                                       | Address | Length | Read Only | Value    | Unit    | Format   | Description                                                                       |
 | ------------------------------------------ | ------- | ------ | --------- | -------- | ------- | -------- | --------------------------------------------------------------------------------- |
-| Power ON Cycles                            | 0       | 4      | True      | 0        | -       | unsigned | Power On Cycles since first reset(Note that a resets also counts as power on)     |
+| Power ON Cycles                            | 0       | 4      | True      | 0        | -       | unsigned |                                                                                   |
 | Power OFF Cycles                           | 4       | 4      | True      | 0        | -       | unsigned | Power Off Cycles since first reset                                                |
 | Operating Time since first power On        | 8       | 4      | True      | 0        | seconds | unsigned | Operating Time since first power On in seconds                                    |
 | Under Voltage Counter since first power On | 12      | 4      | True      | 0        | -       | unsigned | Counts of under voltages that yields into turn off state(Brown Out)               |
