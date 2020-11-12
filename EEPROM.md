@@ -2,7 +2,7 @@
 
 ## Layout
 
-- Every page consists of 256 byte
+- Every page consists of 256 bytes
 - The address of a page is the page number multiplied by 256
 
 ### Pages:
