@@ -55,36 +55,36 @@
 
 #### Page `Product Data`
 
-| Byte      | Description                                         | Format        |
-| --------- | --------------------------------------------------- | ------------- |
-| 0         | Global Trade Identification Number (GTIN) - 0 (LSB) | unsigned      |
-| 1         | Global Trade Identification Number (GTIN) - 1       | unsigned      |
-| 2         | Global Trade Identification Number (GTIN) - 2       | unsigned      |
-| 3         | Global Trade Identification Number (GTIN) - 3       | unsigned      |
-| 4         | Global Trade Identification Number (GTIN) - 4       | unsigned      |
-| 5         | Global Trade Identification Number (GTIN) - 5       | unsigned      |
-| 6         | Global Trade Identification Number (GTIN) - 6       | unsigned      |
-| 7         | Global Trade Identification Number (GTIN) - 7 (MSB) | unsigned      |
-| 8         | Hardware Revision - Reserved - 1                    | unsigned      |
-| 9         | Hardware Revision - Reserved - 2                    | unsigned      |
-| 10        | Hardware Revision - Reserved - 3                    | unsigned      |
-| 11        | Hardware Revision - Reserved - 4                    | unsigned      |
-| 12        | Hardware Revision - Reserved - 5                    | unsigned      |
-| 13        | Hardware Revision - Major                           | unsigned      |
-| 14        | Hardware Revision - Minor                           | unsigned      |
-| 15        | Hardware Revision - Build                           | unsigned      |
-| 16        | Firmware Version - Reserved - 1                     | unsigned      |
-| 17        | Firmware Version - Reserved - 2                     | unsigned      |
-| 18        | Firmware Version - Reserved - 3                     | unsigned      |
-| 19        | Firmware Version - Reserved - 4                     | unsigned      |
-| 20        | Firmware Version - Reserved - 5                     | unsigned      |
-| 21        | Firmware Version - Major                            | unsigned      |
-| 22        | Firmware Version - Minor                            | unsigned      |
-| 23        | Firmware Version - Build                            | unsigned      |
-| 24 - 31   | Release Name 0-7                                    | UTF8 - String |
-| 32 - 63   | Serial Number 0-31                                  | UTF8 - String |
-| 64 - 191  | Name 0-127                                          | UTF8 - String |
-| 192 - 255 | OEM Free Use 0-63                                   | -             |
+| Byte      | Description                               | Comment  | Format   |
+| --------- | ----------------------------------------- | -------- | -------- |
+| 0         | Global Trade Identification Number (GTIN) | LSB      | Unsigned |
+| 1         | Global Trade Identification Number (GTIN) |          | Unsigned |
+| 2         | Global Trade Identification Number (GTIN) |          | Unsigned |
+| 3         | Global Trade Identification Number (GTIN) |          | Unsigned |
+| 4         | Global Trade Identification Number (GTIN) |          | Unsigned |
+| 5         | Global Trade Identification Number (GTIN) |          | Unsigned |
+| 6         | Global Trade Identification Number (GTIN) |          | Unsigned |
+| 7         | Global Trade Identification Number (GTIN) | MSB      | Unsigned |
+| 8         | Hardware Revision - Reserved              |          | Unsigned |
+| 9         | Hardware Revision - Reserved              |          | Unsigned |
+| 10        | Hardware Revision - Reserved              |          | Unsigned |
+| 11        | Hardware Revision - Reserved              |          | Unsigned |
+| 12        | Hardware Revision - Reserved              |          | Unsigned |
+| 13        | Hardware Revision - Major                 |          | Unsigned |
+| 14        | Hardware Revision - Minor                 |          | Unsigned |
+| 15        | Hardware Revision - Build                 |          | Unsigned |
+| 16        | Firmware Version - Reserved               |          | Unsigned |
+| 17        | Firmware Version - Reserved               |          | Unsigned |
+| 18        | Firmware Version - Reserved               |          | Unsigned |
+| 19        | Firmware Version - Reserved               |          | Unsigned |
+| 20        | Firmware Version - Reserved               |          | Unsigned |
+| 21        | Firmware Version - Major                  |          | Unsigned |
+| 22        | Firmware Version - Minor                  |          | Unsigned |
+| 23        | Firmware Version - Build                  |          | Unsigned |
+| 24 - 31   | Release Name                              | 8 Byte   | UTF8     |
+| 32 - 63   | Serial Number                             | 32 Byte  | UTF8     |
+| 64 - 191  | Name                                      | 128 Byte | UTF8     |
+| 192 - 255 | OEM Free Use                              | 64 Byte  | -        |
 
 <a name="page:statistic"></a>
 
