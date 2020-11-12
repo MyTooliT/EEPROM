@@ -39,9 +39,9 @@ This file contains the default values of the STH EEPROM.
 | Firmware Version Number - Major    | 21      | 1      | False     | 2     | unsigned | Firmware Version Number - Major                                                                                         |
 | Firmware Version Number - Minor    | 22      | 1      | False     | 1     | unsigned | Firmware Version Number - Minor                                                                                         |
 | Firmware Version Number - Build    | 23      | 1      | False     | 9     | unsigned | Firmware Version Number - Build                                                                                         |
-| Release Name                       | 24      | 8      | False     | Tanja | UTF8     | Release Name, represents Major - Minor                                                                                  |
-| Serial Number                      | 32      | 32     | True      | 0     | UTF8     | Manufacture Serial Number (Derived from ISBN); Product Group - Subgroup - Manufacture ID - Product Number - Check Digit |
-| Name                               | 64      | 128    | True      | 0     | UTF8     | Manufacture Name; This may extend Serial Number, supports URL, extend definition, etc.                                  |
+| Release Name                       | 24      | 8      | False     | Tanja | UTF-8    | Release Name, represents Major - Minor                                                                                  |
+| Serial Number                      | 32      | 32     | True      | 0     | UTF-8    | Manufacture Serial Number (Derived from ISBN); Product Group - Subgroup - Manufacture ID - Product Number - Check Digit |
+| Name                               | 64      | 128    | True      | 0     | UTF-8    | Manufacture Name; This may extend Serial Number, supports URL, extend definition, etc.                                  |
 | OEM Free Use                       | 192     | 64     | True      | 0     | -        | Supports Manufacture Specific information in format that is free to choose                                              |
 
 <a name="page:statistic"></a>
