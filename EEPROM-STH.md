@@ -15,14 +15,14 @@ This file contains the default values of the STH EEPROM.
 
 ### Page `System Configuration`
 
-| Name                 | Address | Length | Read Only | Value                                | Unit | Format   | Description                                              |
-| -------------------- | ------- | ------ | --------- | ------------------------------------ | ---- | -------- | -------------------------------------------------------- |
-| EEPROM Status        | 0       | 1      | True      | `0xac`                               | -    |          | Value for initialised EERPOM                             |
-| STH Name             | 1       | 8      | False     | Base64 encoded Bluetooth MAC address | -    | UTF-8    | Bluetooth advertisement name                             |
-| Sleep Time 1         | 9       | 4      | False     | 300000                               | ms   | Unsigned | Time to from disconnect/power on to Sleep Mode           |
-| Advertisement Time 1 | 13      | 2      | False     | 2000                                 | ms   | Unsigned | Bluetooth advertisement time for Sleep Mode 1            |
-| Sleep time 2         | 15      | 4      | False     | 259200000                            | ms   | Unsigned | Time to from entering Sleep Mode 1 to Sleep Mode 2 in ms |
-| Advertisement Time 2 | 19      | 2      | False     | 4000                                 | ms   | Unsigned | Bluetooth advertisement time for Sleep Mode 2            |
+| Name                 | Address | Length | Read Only | Value                                | Unit | Format   | Description                                        |
+| -------------------- | ------- | ------ | --------- | ------------------------------------ | ---- | -------- | -------------------------------------------------- |
+| EEPROM Status        | 0       | 1      | True      | `0xac`                               | -    |          | Value for initialised EERPOM                       |
+| STH Name             | 1       | 8      | False     | Base64 encoded Bluetooth MAC address | -    | UTF-8    | Bluetooth advertisement name                       |
+| Sleep Time 1         | 9       | 4      | False     | 300000                               | ms   | Unsigned | Time to from disconnect/power on to Sleep Mode     |
+| Advertisement Time 1 | 13      | 2      | False     | 2000                                 | ms   | Unsigned | Bluetooth advertisement time for Sleep Mode 1      |
+| Sleep time 2         | 15      | 4      | False     | 259200000                            | ms   | Unsigned | Time to from entering Sleep Mode 1 to Sleep Mode 2 |
+| Advertisement Time 2 | 19      | 2      | False     | 4000                                 | ms   | Unsigned | Bluetooth advertisement time for Sleep Mode 2      |
 
 <a name="page:product-data"></a>
 
