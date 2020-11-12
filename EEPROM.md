@@ -18,7 +18,7 @@
 
 #### Page `System Configuration`
 
-| Byte | Description          | Comment                                                                 | Format   | Unit |
+| Byte | Name                 | Comment                                                                 | Format   | Unit |
 | ---- | -------------------- | ----------------------------------------------------------------------- | -------- | ---- |
 | 0    | Init                 | • `0xAC`: Init <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
 | 1    | Radio Name 0         |                                                                         | ASCII    | -    |
@@ -55,7 +55,7 @@
 
 #### Page `Product Data`
 
-| Byte      | Description                               | Comment  | Format   |
+| Byte      | Name                                      | Comment  | Format   |
 | --------- | ----------------------------------------- | -------- | -------- |
 | 0         | Global Trade Identification Number (GTIN) | LSB      | Unsigned |
 | 1         | Global Trade Identification Number (GTIN) |          | Unsigned |
@@ -90,7 +90,7 @@
 
 #### Page `Statistic`
 
-| Byte | Description           | Comment | Format   | Unit |
+| Byte | Name                  | Comment | Format   | Unit |
 | ---- | --------------------- | ------- | -------- | ---- |
 | 0    | Power On Cycles       | LSB     | Unsigned | -    |
 | 1    | Power On Cycles       |         | Unsigned | -    |
@@ -125,7 +125,7 @@
 
 #### Page `Calibration`
 
-| Byte | Description                  | Comment | Format |
+| Byte | Name                         | Comment | Format |
 | ---- | ---------------------------- | ------- | ------ |
 | 0    | Acceleration X: Slope        | LSB     | Float  |
 | 1    | Acceleration X: Slope        |         | Float  |
