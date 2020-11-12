@@ -125,77 +125,77 @@
 
 #### Page `Calibration 0`
 
-| Byte | Description                      | Format                    |
-| ---- | -------------------------------- | ------------------------- |
-| 0    | Acceleration X - K - 0 (LSB)     | float - IEEE 754 binary32 |
-| 1    | Acceleration X - K - 1           | float - IEEE 754 binary32 |
-| 2    | Acceleration X - K - 2           | float - IEEE 754 binary32 |
-| 3    | Acceleration X - K - 3 (MSB)     | float - IEEE 754 binary32 |
-| 4    | Acceleration X - D - 0 (LSB)     | float - IEEE 754 binary32 |
-| 5    | Acceleration X - D - 1           | float - IEEE 754 binary32 |
-| 6    | Acceleration X - D- 2            | float - IEEE 754 binary32 |
-| 7    | Acceleration X - D - 3 (MSB)     | float - IEEE 754 binary32 |
-| 8    | Acceleration Y - K - 0 (LSB)     | float - IEEE 754 binary32 |
-| 9    | Acceleration Y - K - 1           | float - IEEE 754 binary32 |
-| 10   | Acceleration Y - K - 2           | float - IEEE 754 binary32 |
-| 11   | Acceleration Y - K - 3 (MSB)     | float - IEEE 754 binary32 |
-| 12   | Acceleration Y - D - 0 (LSB)     | float - IEEE 754 binary32 |
-| 13   | Acceleration Y - D - 1           | float - IEEE 754 binary32 |
-| 14   | Acceleration Y - D- 2            | float - IEEE 754 binary32 |
-| 15   | Acceleration Y - D - 3 (MSB)     | float - IEEE 754 binary32 |
-| 16   | Acceleration Z - K - 0 (LSB)     | float - IEEE 754 binary32 |
-| 17   | Acceleration Z - K - 1           | float - IEEE 754 binary32 |
-| 18   | Acceleration Z - K - 2           | float - IEEE 754 binary32 |
-| 19   | Acceleration Z - K - 3 (MSB)     | float - IEEE 754 binary32 |
-| 20   | Acceleration Z - D - 0 (LSB)     | float - IEEE 754 binary32 |
-| 21   | Acceleration Z - D - 1           | float - IEEE 754 binary32 |
-| 22   | Acceleration Z - D- 2            | float - IEEE 754 binary32 |
-| 23   | Acceleration Z - D - 3 (MSB)     | float - IEEE 754 binary32 |
-| 24   | Voltage Battery - K - 0 (LSB)    | float - IEEE 754 binary32 |
-| 25   | Voltage Battery - K - 1          | float - IEEE 754 binary32 |
-| 26   | Voltage Battery - K - 2          | float - IEEE 754 binary32 |
-| 27   | Voltage Battery - K - 3 (MSB)    | float - IEEE 754 binary32 |
-| 28   | Voltage Battery - D - 0 (LSB)    | float - IEEE 754 binary32 |
-| 29   | Voltage Battery - D - 1          | float - IEEE 754 binary32 |
-| 30   | Voltage Battery - D- 2           | float - IEEE 754 binary32 |
-| 31   | Voltage Battery - D - 3 (MSB)    | float - IEEE 754 binary32 |
-| 32   | Voltage 2 - K - 0 (LSB)          | float - IEEE 754 binary32 |
-| 33   | Voltage 2 - K - 1                | float - IEEE 754 binary32 |
-| 34   | Voltage 2 - K - 2                | float - IEEE 754 binary32 |
-| 35   | Voltage 2 - K - 3 (MSB)          | float - IEEE 754 binary32 |
-| 36   | Voltage 2 - D - 0 (LSB)          | float - IEEE 754 binary32 |
-| 37   | Voltage 2 - D - 1                | float - IEEE 754 binary32 |
-| 38   | Voltage 2 - D- 2                 | float - IEEE 754 binary32 |
-| 39   | Voltage 2 - D - 3 (MSB)          | float - IEEE 754 binary32 |
-| 40   | Voltage 3 - K - 0 (LSB)          | float - IEEE 754 binary32 |
-| 41   | Voltage 3 - K - 1                | float - IEEE 754 binary32 |
-| 42   | Voltage 3 - K - 2                | float - IEEE 754 binary32 |
-| 43   | Voltage 3 - K - 3 (MSB)          | float - IEEE 754 binary32 |
-| 44   | Voltage 3 - D - 0 (LSB)          | float - IEEE 754 binary32 |
-| 45   | Voltage 3 - D - 1                | float - IEEE 754 binary32 |
-| 46   | Voltage 3 - D- 2                 | float - IEEE 754 binary32 |
-| 47   | Voltage 3 - D - 3 (MSB)          | float - IEEE 754 binary32 |
-| 48   | Temperature Intern - K - 0 (LSB) | float - IEEE 754 binary32 |
-| 49   | Temperature Intern - K - 1       | float - IEEE 754 binary32 |
-| 50   | Temperature Intern - K - 2       | float - IEEE 754 binary32 |
-| 51   | Temperature Intern - K - 3 (MSB) | float - IEEE 754 binary32 |
-| 52   | Temperature Intern - D - 0 (LSB) | float - IEEE 754 binary32 |
-| 53   | Temperature Intern - D - 1       | float - IEEE 754 binary32 |
-| 54   | Temperature Intern - D- 2        | float - IEEE 754 binary32 |
-| 55   | Temperature Intern - D - 3 (MSB) | float - IEEE 754 binary32 |
-| 56   | Temperature 2 - K - 0 (LSB)      | float - IEEE 754 binary32 |
-| 57   | Temperature 2 - K - 1            | float - IEEE 754 binary32 |
-| 58   | Temperature 2 - K - 2            | float - IEEE 754 binary32 |
-| 59   | Temperature 2 - K - 3 (MSB)      | float - IEEE 754 binary32 |
-| 60   | Temperature 2 - D - 0 (LSB)      | float - IEEE 754 binary32 |
-| 61   | Temperature 2 - D - 1            | float - IEEE 754 binary32 |
-| 62   | Temperature 2 - D- 2             | float - IEEE 754 binary32 |
-| 63   | Temperature 2 - D - 3 (MSB)      | float - IEEE 754 binary32 |
-| 64   | Temperature 3 - K - 0 (LSB)      | float - IEEE 754 binary32 |
-| 65   | Temperature 3 - K - 1            | float - IEEE 754 binary32 |
-| 66   | Temperature 3 - K - 2            | float - IEEE 754 binary32 |
-| 67   | Temperature 3 - K - 3 (MSB)      | float - IEEE 754 binary32 |
-| 68   | Temperature 3 - D - 0 (LSB)      | float - IEEE 754 binary32 |
-| 69   | Temperature 3 - D - 1            | float - IEEE 754 binary32 |
-| 70   | Temperature 3 - D- 2             | float - IEEE 754 binary32 |
-| 71   | Temperature 3 - D - 3 (MSB)      | float - IEEE 754 binary32 |
+| Byte | Description                  | Comment | Format |
+| ---- | ---------------------------- | ------- | ------ |
+| 0    | Acceleration X: Slope        | LSB     | Float  |
+| 1    | Acceleration X: Slope        |         | Float  |
+| 2    | Acceleration X: Slope        |         | Float  |
+| 3    | Acceleration X: Slope        | MSB     | Float  |
+| 4    | Acceleration X: Offset       | LSB     | Float  |
+| 5    | Acceleration X: Offset       |         | Float  |
+| 6    | Acceleration X: Offset       |         | Float  |
+| 7    | Acceleration X: Offset       | MSB     | Float  |
+| 8    | Acceleration Y: Slope        | LSB     | Float  |
+| 9    | Acceleration Y: Slope        |         | Float  |
+| 10   | Acceleration Y: Slope        |         | Float  |
+| 11   | Acceleration Y: Slope        | MSB     | Float  |
+| 12   | Acceleration Y: Offset       | LSB     | Float  |
+| 13   | Acceleration Y: Offset       |         | Float  |
+| 14   | Acceleration Y: Offset       |         | Float  |
+| 15   | Acceleration Y: Offset       | MSB     | Float  |
+| 16   | Acceleration Z: Slope        | LSB     | Float  |
+| 17   | Acceleration Z: Slope        |         | Float  |
+| 18   | Acceleration Z: Slope        |         | Float  |
+| 19   | Acceleration Z: Slope        | MSB     | Float  |
+| 20   | Acceleration Z: Offset       | LSB     | Float  |
+| 21   | Acceleration Z: Offset       |         | Float  |
+| 22   | Acceleration Z: Offset       |         | Float  |
+| 23   | Acceleration Z: Offset       | MSB     | Float  |
+| 24   | Voltage Battery: Slope       | LSB     | Float  |
+| 25   | Voltage Battery: Slope       |         | Float  |
+| 26   | Voltage Battery: Slope       |         | Float  |
+| 27   | Voltage Battery: Slope       | MSB     | Float  |
+| 28   | Voltage Battery: Offset      | LSB     | Float  |
+| 29   | Voltage Battery: Offset      |         | Float  |
+| 30   | Voltage Battery: Offset      |         | Float  |
+| 31   | Voltage Battery: Offset      | MSB     | Float  |
+| 32   | Voltage 2: Slope             | LSB     | Float  |
+| 33   | Voltage 2: Slope             |         | Float  |
+| 34   | Voltage 2: Slope             |         | Float  |
+| 35   | Voltage 2: Slope             | MSB     | Float  |
+| 36   | Voltage 2: Offset            | LSB     | Float  |
+| 37   | Voltage 2: Offset            |         | Float  |
+| 38   | Voltage 2: Offset            |         | Float  |
+| 39   | Voltage 2: Offset            | MSB     | Float  |
+| 40   | Voltage 3: Slope             | LSB     | Float  |
+| 41   | Voltage 3: Slope             |         | Float  |
+| 42   | Voltage 3: Slope             |         | Float  |
+| 43   | Voltage 3: Slope             | MSB     | Float  |
+| 44   | Voltage 3: Offset            | LSB     | Float  |
+| 45   | Voltage 3: Offset            |         | Float  |
+| 46   | Voltage 3: Offset            |         | Float  |
+| 47   | Voltage 3: Offset            | MSB     | Float  |
+| 48   | Internal Temperature: Slope  | LSB     | Float  |
+| 49   | Internal Temperature: Slope  |         | Float  |
+| 50   | Internal Temperature: Slope  |         | Float  |
+| 51   | Internal Temperature: Slope  | MSB     | Float  |
+| 52   | Internal Temperature: Offset | LSB     | Float  |
+| 53   | Internal Temperature: Offset |         | Float  |
+| 54   | Internal Temperature: Offset |         | Float  |
+| 55   | Internal Temperature: Offset | MSB     | Float  |
+| 56   | Temperature 2: Slope         | LSB     | Float  |
+| 57   | Temperature 2: Slope         |         | Float  |
+| 58   | Temperature 2: Slope         |         | Float  |
+| 59   | Temperature 2: Slope         | MSB     | Float  |
+| 60   | Temperature 2: Offset        | LSB     | Float  |
+| 61   | Temperature 2: Offset        |         | Float  |
+| 62   | Temperature 2: Offset        |         | Float  |
+| 63   | Temperature 2: Offset        | MSB     | Float  |
+| 64   | Temperature 3: Slope         | LSB     | Float  |
+| 65   | Temperature 3: Slope         |         | Float  |
+| 66   | Temperature 3: Slope         |         | Float  |
+| 67   | Temperature 3: Slope         | MSB     | Float  |
+| 68   | Temperature 3: Offset        | LSB     | Float  |
+| 69   | Temperature 3: Offset        |         | Float  |
+| 70   | Temperature 3: Offset        |         | Float  |
+| 71   | Temperature 3: Offset        | MSB     | Float  |
