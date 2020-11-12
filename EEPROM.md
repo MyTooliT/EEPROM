@@ -90,36 +90,36 @@
 
 #### Page `Statistic`
 
-| Byte | Description                                              | Format         |
-| ---- | -------------------------------------------------------- | -------------- |
-| 0    | Power ON Cycles - 0 (LSB)                                | unsigned       |
-| 1    | Power ON Cycles - 1                                      | unsigned       |
-| 2    | Power ON Cycles - 2                                      | unsigned       |
-| 3    | Power ON Cycles - 3 (MSB)                                | unsigned       |
-| 4    | Power OFF Cycles - 0 (LSB)                               | unsigned       |
-| 5    | Power OFF Cycles - 1                                     | unsigned       |
-| 6    | Power OFF Cycles - 2                                     | unsigned       |
-| 7    | Power OFF Cycles - 3 (MSB)                               | unsigned       |
-| 8    | Operating Time since first Power On in seconds - 0 (LSB) | unsigned       |
-| 9    | Operating Time since first Power On in seconds - 1       | unsigned       |
-| 10   | Operating Time since first Power On in seconds - 2       | unsigned       |
-| 11   | Operating Time since first Power On in seconds - 3 (MSB) | unsigned       |
-| 12   | Under Voltage Counter since first Power On - 0 (LSB)     | unsigned       |
-| 13   | Under Voltage Counter since first Power On - 1           | unsigned       |
-| 14   | Under Voltage Counter since first Power On - 2           | unsigned       |
-| 15   | Under Voltage Counter since first Power On - 3 (MSB)     | unsigned       |
-| 16   | WatchDogResetCause - 0 (LSB)                             | unsigned       |
-| 17   | WatchDogResetCause - 1                                   | unsigned       |
-| 18   | WatchDogResetCause - 2                                   | unsigned       |
-| 19   | WatchDogResetCause - 3 (MSB)                             | unsigned       |
-| 20   | Production Date - y0                                     | ASCII - String |
-| 21   | Production Date - y1                                     | ASCII - String |
-| 22   | Production Date - y2                                     | ASCII - String |
-| 23   | Production Date - y3                                     | ASCII - String |
-| 24   | Production Date - m0                                     | ASCII - String |
-| 25   | Production Date - m1                                     | ASCII - String |
-| 26   | Production Date - d0                                     | ASCII - String |
-| 27   | Production Date - d1                                     | ASCII - String |
+| Byte | Description           | Comment | Format   | Unit |
+| ---- | --------------------- | ------- | -------- | ---- |
+| 0    | Power On Cycles       | LSB     | Unsigned | -    |
+| 1    | Power On Cycles       |         | Unsigned | -    |
+| 2    | Power On Cycles       |         | Unsigned | -    |
+| 3    | Power On Cycles       | MSB     | Unsigned | -    |
+| 4    | Power Off Cycles      | LSB     | Unsigned | -    |
+| 5    | Power Off Cycles      |         | Unsigned | -    |
+| 6    | Power Off Cycles      |         | Unsigned | -    |
+| 7    | Power Off Cycles      | MSB     | Unsigned | -    |
+| 8    | Operating Time        | LSB     | Unsigned | s    |
+| 9    | Operating Time        |         | Unsigned | s    |
+| 10   | Operating Time        |         | Unsigned | s    |
+| 11   | Operating Time        | MSB     | Unsigned | s    |
+| 12   | Under Voltage Counter | LSB     | Unsigned | -    |
+| 13   | Under Voltage Counter |         | Unsigned | -    |
+| 14   | Under Voltage Counter |         | Unsigned | -    |
+| 15   | Under Voltage Counter | MSB     | Unsigned | -    |
+| 16   | WatchDog Reset Cause  | LSB     | Unsigned | -    |
+| 17   | WatchDog Reset Cause  |         | Unsigned | -    |
+| 18   | WatchDog Reset Cause  |         | Unsigned | -    |
+| 19   | WatchDog Reset Cause  | MSB     | Unsigned | -    |
+| 20   | Production Date Year  |         | ASCII    | -    |
+| 21   | Production Date Year  |         | ASCII    | -    |
+| 22   | Production Date Year  |         | ASCII    | -    |
+| 23   | Production Date Year  |         | ASCII    | -    |
+| 24   | Production Date Month |         | ASCII    | -    |
+| 25   | Production Date Month |         | ASCII    | -    |
+| 26   | Production Date Day   |         | ASCII    | -    |
+| 27   | Production Date Day   |         | ASCII    | -    |
 
 <a name="page:calibration"></a>
 
