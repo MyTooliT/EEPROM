@@ -86,6 +86,13 @@
 | 64 - 191  | Name                                      | 128 Byte | UTF-8    |
 | 192 - 255 | OEM Free Use                              | 64 Byte  | -        |
 
+##### Version Numbers
+
+- Version numbers will look like this `Major.Minor.Build` (e.g. `1.2.3`)
+- Major specifies the first digit of the version number (usually only increased for “breaking” changes)
+- Minor specifies the second digit of the version number (usually only increased for “minor” changes)
+- Build specifies the third digit of the version number (usually increased for “bug fixes”)
+
 <a name="page:statistic"></a>
 
 #### Page `Statistic`
