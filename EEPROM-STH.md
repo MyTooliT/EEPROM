@@ -4,16 +4,16 @@ This file contains the momentary used values of the EEPROM from the STH.
 
 ## Used Pages
 
-| Page Number | Page Name                                            |
-| ----------- | ---------------------------------------------------- |
-| `0x0`       | [System Configuration 0](#page:system-configuration) |
-| `0x4`       | [Product Data](#page:product-data)                   |
-| `0x5`       | [Statistic](#page:statistic)                         |
-| `0x8`       | [Calibration 0](#page:calibration)                   |
+| Page Number | Page Name                                          |
+| ----------- | -------------------------------------------------- |
+| `0x0`       | [System Configuration](#page:system-configuration) |
+| `0x4`       | [Product Data](#page:product-data)                 |
+| `0x5`       | [Statistic](#page:statistic)                       |
+| `0x8`       | [Calibration](#page:calibration)                   |
 
 <a name="page:system-configuration"></a>
 
-### Page `System Configuration 0`
+### Page `System Configuration`
 
 | Name                 | Address | Length | Read Only | Value     | Unit | Format   | Description                                                      |
 | -------------------- | ------- | ------ | --------- | --------- | ---- | -------- | ---------------------------------------------------------------- |
@@ -60,7 +60,7 @@ This file contains the momentary used values of the EEPROM from the STH.
 
 <a name="page:calibration"></a>
 
-### Page `Calibration 0`
+### Page `Calibration`
 
 | Name                     | Address | Length | Read Only | Value                  | Format | Description                                             |
 | ------------------------ | ------- | ------ | --------- | ---------------------- | ------ | ------------------------------------------------------- |

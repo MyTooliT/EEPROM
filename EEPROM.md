@@ -7,16 +7,16 @@
 
 ### Pages:
 
-| Page Number | Name                                                 | Description                                                                                         |
-| ----------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 0           | [System Configuration 0](#page:system-configuration) | Store system specific data e.g. Bluetooth name, advertisement time, etc.                            |
-| 4           | [Product Data](#page:product-data)                   | Store product data e.g. serial number                                                               |
-| 5           | [Statistic](#page:statistic)                         | Store Statistic data e.g. power on/off cycles etc.                                                  |
-| 8           | [Calibration 0](#page:calibration)                   | Store configuration data like Slope (`k`) and offset (`d`) values to derive SI value from ADC value |
+| Page Number | Name                                               | Description                                                                                         |
+| ----------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 0           | [System Configuration](#page:system-configuration) | Store system specific data e.g. Bluetooth name, advertisement time, etc.                            |
+| 4           | [Product Data](#page:product-data)                 | Store product data e.g. serial number                                                               |
+| 5           | [Statistic](#page:statistic)                       | Store Statistic data e.g. power on/off cycles etc.                                                  |
+| 8           | [Calibration](#page:calibration)                   | Store configuration data like Slope (`k`) and offset (`d`) values to derive SI value from ADC value |
 
 <a name="page:system-configuration"></a>
 
-#### Page `System Configuration 0`
+#### Page `System Configuration`
 
 | Byte | Description          | Comment                                                                 | Format   | Unit |
 | ---- | -------------------- | ----------------------------------------------------------------------- | -------- | ---- |
@@ -123,7 +123,7 @@
 
 <a name="page:calibration"></a>
 
-#### Page `Calibration 0`
+#### Page `Calibration`
 
 | Byte | Description                  | Comment | Format |
 | ---- | ---------------------------- | ------- | ------ |
