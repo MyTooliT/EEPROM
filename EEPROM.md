@@ -131,36 +131,42 @@ This text specifies the code name of the STH/STU software release
 
 #### Page `Statistic`
 
-| Byte | Name                  | Comment | Format   | Unit |
-| ---- | --------------------- | ------- | -------- | ---- |
-| 0    | Power On Cycles       | LSB     | Unsigned | -    |
-| 1    | Power On Cycles       |         | Unsigned | -    |
-| 2    | Power On Cycles       |         | Unsigned | -    |
-| 3    | Power On Cycles       | MSB     | Unsigned | -    |
-| 4    | Power Off Cycles      | LSB     | Unsigned | -    |
-| 5    | Power Off Cycles      |         | Unsigned | -    |
-| 6    | Power Off Cycles      |         | Unsigned | -    |
-| 7    | Power Off Cycles      | MSB     | Unsigned | -    |
-| 8    | Operating Time        | LSB     | Unsigned | s    |
-| 9    | Operating Time        |         | Unsigned | s    |
-| 10   | Operating Time        |         | Unsigned | s    |
-| 11   | Operating Time        | MSB     | Unsigned | s    |
-| 12   | Under Voltage Counter | LSB     | Unsigned | -    |
-| 13   | Under Voltage Counter |         | Unsigned | -    |
-| 14   | Under Voltage Counter |         | Unsigned | -    |
-| 15   | Under Voltage Counter | MSB     | Unsigned | -    |
-| 16   | WatchDog Reset Cause  | LSB     | Unsigned | -    |
-| 17   | WatchDog Reset Cause  |         | Unsigned | -    |
-| 18   | WatchDog Reset Cause  |         | Unsigned | -    |
-| 19   | WatchDog Reset Cause  | MSB     | Unsigned | -    |
-| 20   | Production Date Year  |         | ASCII    | -    |
-| 21   | Production Date Year  |         | ASCII    | -    |
-| 22   | Production Date Year  |         | ASCII    | -    |
-| 23   | Production Date Year  |         | ASCII    | -    |
-| 24   | Production Date Month |         | ASCII    | -    |
-| 25   | Production Date Month |         | ASCII    | -    |
-| 26   | Production Date Day   |         | ASCII    | -    |
-| 27   | Production Date Day   |         | ASCII    | -    |
+| Byte | Name                                      | Comment | Format   | Unit |
+| ---- | ----------------------------------------- | ------- | -------- | ---- |
+| 0    | [Power On Cycles](#value:power-on-cycles) | LSB     | Unsigned | -    |
+| 1    | [Power On Cycles](#value:power-on-cycles) |         | Unsigned | -    |
+| 2    | [Power On Cycles](#value:power-on-cycles) |         | Unsigned | -    |
+| 3    | [Power On Cycles](#value:power-on-cycles) | MSB     | Unsigned | -    |
+| 4    | Power Off Cycles                          | LSB     | Unsigned | -    |
+| 5    | Power Off Cycles                          |         | Unsigned | -    |
+| 6    | Power Off Cycles                          |         | Unsigned | -    |
+| 7    | Power Off Cycles                          | MSB     | Unsigned | -    |
+| 8    | Operating Time                            | LSB     | Unsigned | s    |
+| 9    | Operating Time                            |         | Unsigned | s    |
+| 10   | Operating Time                            |         | Unsigned | s    |
+| 11   | Operating Time                            | MSB     | Unsigned | s    |
+| 12   | Under Voltage Counter                     | LSB     | Unsigned | -    |
+| 13   | Under Voltage Counter                     |         | Unsigned | -    |
+| 14   | Under Voltage Counter                     |         | Unsigned | -    |
+| 15   | Under Voltage Counter                     | MSB     | Unsigned | -    |
+| 16   | WatchDog Reset Cause                      | LSB     | Unsigned | -    |
+| 17   | WatchDog Reset Cause                      |         | Unsigned | -    |
+| 18   | WatchDog Reset Cause                      |         | Unsigned | -    |
+| 19   | WatchDog Reset Cause                      | MSB     | Unsigned | -    |
+| 20   | Production Date Year                      |         | ASCII    | -    |
+| 21   | Production Date Year                      |         | ASCII    | -    |
+| 22   | Production Date Year                      |         | ASCII    | -    |
+| 23   | Production Date Year                      |         | ASCII    | -    |
+| 24   | Production Date Month                     |         | ASCII    | -    |
+| 25   | Production Date Month                     |         | ASCII    | -    |
+| 26   | Production Date Day                       |         | ASCII    | -    |
+| 27   | Production Date Day                       |         | ASCII    | -    |
+
+<a name="value:power-on-cycles"></a>
+
+##### Power On Cycles
+
+Please note, that a reset also counts as power on cycle
 
 <a name="page:calibration"></a>
 
