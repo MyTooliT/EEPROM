@@ -18,29 +18,38 @@
 
 #### Page `System Configuration 0`
 
-| Byte | Description                                                   | Format         |
-| ---- | ------------------------------------------------------------- | -------------- |
-| 0    | Init (0xAC=Init, 0xCA=Locked, else Uninitialized)             | -              |
-| 1    | Radio Name - 0                                                | ASCII - String |
-| 2    | Radio Name - 1                                                | ASCII - String |
-| 3    | Radio Name - 2                                                | ASCII - String |
-| 4    | Radio Name - 3                                                | ASCII - String |
-| 5    | Radio Name - 4                                                | ASCII - String |
-| 6    | Radio Name - 5                                                | ASCII - String |
-| 7    | Radio Name - 6                                                | ASCII - String |
-| 8    | Radio Name - 7                                                | ASCII - String |
-| 9    | Sleep Time 1 in ms (Energy Mode 0 -> Energy Mode 1) - 0 (LSB) | unsigned       |
-| 10   | Sleep Time 1 in ms (Energy Mode 0 -> Energy Mode 1) - 1       | unsigned       |
-| 11   | Sleep Time 1 in ms (Energy Mode 0 -> Energy Mode 1) - 2       | unsigned       |
-| 12   | Sleep Time 1 in ms (Energy Mode 0 -> Energy Mode 1) - 3 (MSB) | unsigned       |
-| 13   | Advertisement Time 1 in ms (Energy Mode 1) - 0 (LSB)          | unsigned       |
-| 14   | Advertisement Time 1 in ms (Energy Mode 1) - 1 (MSB)          | unsigned       |
-| 15   | Sleep Time 2 in ms (Energy Mode 1 -> Energy Mode 2) - 0 (LSB) | unsigned       |
-| 16   | Sleep Time 2 in ms (Energy Mode 1 -> Energy Mode 2) - 1       | unsigned       |
-| 17   | Sleep Time 2 in ms (Energy Mode 1 -> Energy Mode 2) - 2       | unsigned       |
-| 18   | Sleep Time 2 in ms (Energy Mode 1 -> Energy Mode 2) - 3 (MSB) | unsigned       |
-| 19   | Advertisement Time 2 in ms (Energy Mode 2) - 0 (LSB)          | unsigned       |
-| 20   | Advertisement Time 2 in ms (Energy Mode 2) - 1 (MSB)          | unsigned       |
+| Byte | Description          | Comment                                                                 | Format   | Unit |
+| ---- | -------------------- | ----------------------------------------------------------------------- | -------- | ---- |
+| 0    | Init                 | • `0xAC`: Init <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
+| 1    | Radio Name 0         |                                                                         | ASCII    | -    |
+| 2    | Radio Name 1         |                                                                         | ASCII    | -    |
+| 3    | Radio Name 2         |                                                                         | ASCII    | -    |
+| 4    | Radio Name 3         |                                                                         | ASCII    | -    |
+| 5    | Radio Name 4         |                                                                         | ASCII    | -    |
+| 6    | Radio Name 5         |                                                                         | ASCII    | -    |
+| 7    | Radio Name 6         |                                                                         | ASCII    | -    |
+| 8    | Radio Name 7         |                                                                         | ASCII    | -    |
+| 9    | Sleep Time 1         | LSB                                                                     | Unsigned | ms   |
+| 10   | Sleep Time 1         |                                                                         | Unsigned | ms   |
+| 11   | Sleep Time 1         |                                                                         | Unsigned | ms   |
+| 12   | Sleep Time 1         | MSB                                                                     | Unsigned | ms   |
+| 13   | Advertisement Time 1 | LSB                                                                     | Unsigned | ms   |
+| 14   | Advertisement Time 1 | MSB                                                                     | Unsigned | ms   |
+| 15   | Sleep Time 2         | LSB                                                                     | Unsigned | ms   |
+| 16   | Sleep Time 2         |                                                                         | Unsigned | ms   |
+| 17   | Sleep Time 2         |                                                                         | Unsigned | ms   |
+| 18   | Sleep Time 2         | MSB                                                                     | Unsigned | ms   |
+| 19   | Advertisement Time 2 | LSB                                                                     | Unsigned | ms   |
+| 20   | Advertisement Time 2 | MSB                                                                     | Unsigned | ms   |
+
+##### Sleep & Advertisement Times
+
+![STH States](https://raw.githubusercontent.com/MyTooliT/Diagrams/master/Graphs/STH%20States.svg)
+
+- `Sleep Time 1`: Time to switch from the `Disconnected` state to `Sleep Mode 1` (low power usage)
+- `Sleep Time 2`: Time switch from the `Sleep Mode 1` state to `Sleep Mode 2` (very low power usage)
+- `Advertisement Time 1`: Advertisement time in `Sleep Mode 1`
+- `Advertisement Time 2`: Advertisement time in `Sleep Mode 2`
 
 <a name="page:product-data"></a>
 
