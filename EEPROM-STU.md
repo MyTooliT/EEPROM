@@ -13,21 +13,21 @@ This file contains the momentary used values of the EEPROM from the STU.
 
 ### Page `Product Data`
 
-| Name                        | Address | Length | Read Only | Value                                            | Format   | Description                                                                                                             |
-| --------------------------- | ------- | ------ | --------- | ------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| GTIN                        | 0       | 8      | True      | 0                                                | unsigned | Global Trade Identification Number (GTIN)                                                                               |
-| Hardware Revision: Reserved | 8       | 5      | True      | 0                                                | unsigned | Hardware Revision Number - Reserved                                                                                     |
-| Hardware Revision: Major    | 13      | 1      | True      | 1                                                | unsigned | Hardware Revision Number - Major                                                                                        |
-| Hardware Revision: Minor    | 14      | 1      | True      | 3                                                | unsigned | Hardware Revision Number - Minor                                                                                        |
-| Hardware Revision: Build    | 15      | 1      | True      | 1                                                | unsigned | Hardware Revision Number - Build                                                                                        |
-| Firmware Version: Reserved  | 16      | 5      | True      | 0                                                | unsigned | Firmware Version Number - Reserved                                                                                      |
-| Firmware Version: Major     | 21      | 1      | True      | 2                                                | unsigned | Firmware Version Number - Major                                                                                         |
-| Firmware Version: Minor     | 22      | 1      | True      | 1                                                | unsigned | Firmware Version Number - Minor                                                                                         |
-| Firmware Version: Build     | 23      | 1      | True      | 5                                                | unsigned | Firmware Version Number - Build                                                                                         |
-| Release Name                | 24      | 8      | True      | Valerie                                          | UTF-8    | Release Name, represents Major - Minor                                                                                  |
-| Serial Number               | 32      | 32     | True      | MyToolItStu001-1-00001-001-2                     | UTF-8    | Manufacture Serial Number (Derived from ISBN); Product Group - Subgroup - Manufacture ID - Product Number - Check Digit |
-| Product Name                | 64      | 128    | True      | Digital and Analog Communication with 5V -Supply | UTF-8    | Manufacture Name; This may extend Serial Number, supports URL, extend definition, etc.                                  |
-| OEM Free Use                | 192     | 64     | True      | 0                                                | -        | Supports Manufacture Specific information in format that is free to choose                                              |
+| Name                        | Address | Length | Read Only | Value                                            | Format   |
+| --------------------------- | ------- | ------ | --------- | ------------------------------------------------ | -------- |
+| GTIN                        | 0       | 8      | True      | 0                                                | unsigned |
+| Hardware Revision: Reserved | 8       | 5      | True      | 0                                                | unsigned |
+| Hardware Revision: Major    | 13      | 1      | True      | 1                                                | unsigned |
+| Hardware Revision: Minor    | 14      | 1      | True      | 3                                                | unsigned |
+| Hardware Revision: Build    | 15      | 1      | True      | 1                                                | unsigned |
+| Firmware Version: Reserved  | 16      | 5      | True      | 0                                                | unsigned |
+| Firmware Version: Major     | 21      | 1      | True      | 2                                                | unsigned |
+| Firmware Version: Minor     | 22      | 1      | True      | 1                                                | unsigned |
+| Firmware Version: Build     | 23      | 1      | True      | 5                                                | unsigned |
+| Release Name                | 24      | 8      | True      | Valerie                                          | UTF-8    |
+| Serial Number               | 32      | 32     | True      | MyToolItStu001-1-00001-001-2                     | UTF-8    |
+| Product Name                | 64      | 128    | True      | Digital and Analog Communication with 5V -Supply | UTF-8    |
+| OEM Free Use                | 192     | 64     | True      | 0                                                | -        |
 
 <a name="page:statistic"></a>
 
