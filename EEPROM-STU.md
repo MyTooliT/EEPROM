@@ -13,21 +13,25 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 
 ### Page `Product Data`
 
-| Name                        | Address | Length | Read Only | Value                                            | Format   |
-| --------------------------- | ------- | ------ | --------- | ------------------------------------------------ | -------- |
-| GTIN                        | 0       | 8      | True      | 0                                                | Unsigned |
-| Hardware Revision: Reserved | 8       | 5      | True      | 0                                                | Unsigned |
-| Hardware Revision: Major    | 13      | 1      | True      | 1                                                | Unsigned |
-| Hardware Revision: Minor    | 14      | 1      | True      | 3                                                | Unsigned |
-| Hardware Revision: Build    | 15      | 1      | True      | 1                                                | Unsigned |
-| Firmware Version: Reserved  | 16      | 5      | True      | 0                                                | Unsigned |
-| Firmware Version: Major     | 21      | 1      | True      | 2                                                | Unsigned |
-| Firmware Version: Minor     | 22      | 1      | True      | 1                                                | Unsigned |
-| Firmware Version: Build     | 23      | 1      | True      | 5                                                | Unsigned |
-| Release Name                | 24      | 8      | True      | Valerie                                          | UTF-8    |
-| Serial Number               | 32      | 32     | True      | MyToolItStu001-1-00001-001-2                     | UTF-8    |
-| Product Name                | 64      | 128    | True      | Digital and Analog Communication with 5V -Supply | UTF-8    |
-| OEM Free Use                | 192     | 64     | True      | 0                                                | -        |
+| Name                                               | Address | Length | Read Only | Value                                            | Format   |
+| -------------------------------------------------- | ------- | ------ | --------- | ------------------------------------------------ | -------- |
+| GTIN                                               | 0       | 8      | True      | 0                                                | Unsigned |
+| Hardware Revision: Reserved                        | 8       | 5      | True      | 0                                                | Unsigned |
+| Hardware Revision: Major                           | 13      | 1      | True      | 1                                                | Unsigned |
+| Hardware Revision: Minor                           | 14      | 1      | True      | 3                                                | Unsigned |
+| Hardware Revision: Build                           | 15      | 1      | True      | 1                                                | Unsigned |
+| Firmware Version: Reserved                         | 16      | 5      | True      | 0                                                | Unsigned |
+| [Firmware Version: Major](#value:firmware-version) | 21      | 1      | True      | -                                                | Unsigned |
+| [Firmware Version: Minor](#value:firmware-version) | 22      | 1      | True      | -                                                | Unsigned |
+| [Firmware Version: Build](#value:firmware-version) | 23      | 1      | True      | -                                                | Unsigned |
+| Release Name                                       | 24      | 8      | True      | Valerie                                          | UTF-8    |
+| Serial Number                                      | 32      | 32     | True      | MyToolItStu001-1-00001-001-2                     | UTF-8    |
+| Product Name                                       | 64      | 128    | True      | Digital and Analog Communication with 5V -Supply | UTF-8    |
+| OEM Free Use                                       | 192     | 64     | True      | 0                                                | -        |
+
+#### Version Numbers
+
+- <a name="value:firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STU/releases)
 
 <a name="page:statistic"></a>
 
