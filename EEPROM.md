@@ -44,36 +44,21 @@
 
 #### Page `Product Data`
 
-| Byte      | Name                                        | Comment  | Format   |
-| --------- | ------------------------------------------- | -------- | -------- |
-| 0         | Global Trade Identification Number (GTIN)   | LSB      | Unsigned |
-| 1         | Global Trade Identification Number (GTIN)   |          | Unsigned |
-| 2         | Global Trade Identification Number (GTIN)   |          | Unsigned |
-| 3         | Global Trade Identification Number (GTIN)   |          | Unsigned |
-| 4         | Global Trade Identification Number (GTIN)   |          | Unsigned |
-| 5         | Global Trade Identification Number (GTIN)   |          | Unsigned |
-| 6         | Global Trade Identification Number (GTIN)   |          | Unsigned |
-| 7         | Global Trade Identification Number (GTIN)   | MSB      | Unsigned |
-| 8         | Hardware Revision - Reserved                |          | Unsigned |
-| 9         | Hardware Revision - Reserved                |          | Unsigned |
-| 10        | Hardware Revision - Reserved                |          | Unsigned |
-| 11        | Hardware Revision - Reserved                |          | Unsigned |
-| 12        | Hardware Revision - Reserved                |          | Unsigned |
-| 13        | Hardware Revision - Major                   |          | Unsigned |
-| 14        | Hardware Revision - Minor                   |          | Unsigned |
-| 15        | Hardware Revision - Build                   |          | Unsigned |
-| 16        | Firmware Version - Reserved                 |          | Unsigned |
-| 17        | Firmware Version - Reserved                 |          | Unsigned |
-| 18        | Firmware Version - Reserved                 |          | Unsigned |
-| 19        | Firmware Version - Reserved                 |          | Unsigned |
-| 20        | Firmware Version - Reserved                 |          | Unsigned |
-| 21        | Firmware Version - Major                    |          | Unsigned |
-| 22        | Firmware Version - Minor                    |          | Unsigned |
-| 23        | Firmware Version - Build                    |          | Unsigned |
-| 24 - 31   | [Release Name](#value:release-name)         | 8 Byte   | UTF-8    |
-| 32 - 63   | [Serial Number](#value:serial-number)       | 32 Byte  | UTF-8    |
-| 64 - 191  | [Manufacture Name](#value:manufacture-name) | 128 Byte | UTF-8    |
-| 192 - 255 | [OEM Free Use](#value:oem-free-use)         | 64 Byte  | -        |
+| Byte      | Length | Name                                        | Comment                              | Format   |
+| --------- | ------ | ------------------------------------------- | ------------------------------------ | -------- |
+| 0 – 7     | 8      | Global Trade Identification Number (GTIN)   | [Little Endian](#term:little-endian) | Unsigned |
+| 8 – 12    | 5      | Hardware Revision - Reserved                |                                      | –        |
+| 13        | 1      | Hardware Revision - Major                   |                                      | Unsigned |
+| 14        | 1      | Hardware Revision - Minor                   |                                      | Unsigned |
+| 15        | 1      | Hardware Revision - Build                   |                                      | Unsigned |
+| 16 – 20   | 5      | Firmware Version - Reserved                 |                                      | –        |
+| 21        | 1      | Firmware Version - Major                    |                                      | Unsigned |
+| 22        | 1      | Firmware Version - Minor                    |                                      | Unsigned |
+| 23        | 1      | Firmware Version - Build                    |                                      | Unsigned |
+| 24 - 31   | 8      | [Release Name](#value:release-name)         |                                      | UTF-8    |
+| 32 - 63   | 32     | [Serial Number](#value:serial-number)       |                                      | UTF-8    |
+| 64 - 191  | 128    | [Manufacture Name](#value:manufacture-name) |                                      | UTF-8    |
+| 192 - 255 | 64     | [OEM Free Use](#value:oem-free-use)         |                                      | -        |
 
 ##### Version Numbers
 
