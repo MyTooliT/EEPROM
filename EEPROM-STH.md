@@ -30,14 +30,14 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 | Name                            | Address | Length | Read Only | Value | Format   | Description                                          |
 | ------------------------------- | ------- | ------ | --------- | ----- | -------- | ---------------------------------------------------- |
-| GTIN                            | 0       | 8      | True      | 0     | Unsigned | Global Trade Identification Number                   |
+| GTIN                            | 0       | 8      | True      | 0     | Unsigned |                                                      |
 | Hardware Revision - Major       | 13      | 1      | False     | -     | Unsigned | [Major Hardware Revision](#hardware-revision)        |
 | Hardware Revision - Minor       | 14      | 1      | False     | -     | Unsigned | [Minor Hardware Revision Number](#hardware-revision) |
 | Hardware Revision - Build       | 15      | 1      | False     | -     | Unsigned | [Build Hardware Revision Number](#hardware-revision) |
 | Firmware Version Number - Major | 21      | 1      | False     | -     | Unsigned | [Major Firmware Version Number](#software-version)   |
 | Firmware Version Number - Minor | 22      | 1      | False     | -     | Unsigned | [Minor Firmware Version Number](#software-version)   |
 | Firmware Version Number - Build | 23      | 1      | False     | -     | Unsigned | [Build Firmware Version Number](#software-version)   |
-| Release Name                    | 24      | 8      | False     | Tanja | UTF-8    | Code name of the STH software release                |
+| Release Name                    | 24      | 8      | False     | Tanja | UTF-8    |                                                      |
 | Serial Number                   | 32      | 32     | True      | 0     | UTF-8    |                                                      |
 | Name                            | 64      | 128    | True      | 0     | UTF-8    |                                                      |
 | OEM Free Use                    | 192     | 64     | True      | 0     | -        |                                                      |
