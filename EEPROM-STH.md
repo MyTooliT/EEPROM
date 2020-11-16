@@ -57,17 +57,19 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Statistic`
 
-| Name                   | Address | Length | Read Only | Value | Unit | Format   |
-| ---------------------- | ------- | ------ | --------- | ----- | ---- | -------- |
-| Power On Cycles        | 0       | 4      | True      | 0     | -    | Unsigned |
-| Power Off Cycles       | 4       | 4      | True      | 0     | -    | Unsigned |
-| Operating Time         | 8       | 4      | True      | 0     | s    | Unsigned |
-| Under Voltage Counter  | 12      | 4      | True      | 0     | -    | Unsigned |
-| Watchdog Reset Counter | 16      | 4      | True      | 0     | -    | Unsigned |
-| Production Date: Year  | 20      | 4      | False     | -     | -    | ASCII    |
-| Production Date: Month | 24      | 2      | False     | -     | -    | ASCII    |
-| Production Date: Day   | 26      | 2      | False     | -     | -    | ASCII    |
-| Batch Number           | 28      | 4      | True      | 112   | -    | Unsigned |
+| Name                                             | Address | Length | Read Only | Value | Unit | Format   |
+| ------------------------------------------------ | ------- | ------ | --------- | ----- | ---- | -------- |
+| Power On Cycles                                  | 0       | 4      | True      | 0     | -    | Unsigned |
+| Power Off Cycles                                 | 4       | 4      | True      | 0     | -    | Unsigned |
+| Operating Time                                   | 8       | 4      | True      | 0     | s    | Unsigned |
+| Under Voltage Counter                            | 12      | 4      | True      | 0     | -    | Unsigned |
+| Watchdog Reset Counter                           | 16      | 4      | True      | 0     | -    | Unsigned |
+| [Production Date: Year](#value:production-date)  | 20      | 4      | False     | -     | -    | ASCII    |
+| [Production Date: Month](#value:production-date) | 24      | 2      | False     | -     | -    | ASCII    |
+| [Production Date: Day](#value:production-date)   | 26      | 2      | False     | -     | -    | ASCII    |
+| Batch Number                                     | 28      | 4      | True      | 112   | -    | Unsigned |
+
+- <a name="value:production-date">**Production Date**:</a> This date depends on the production date of the STH (printed on the PCB). It can be changed in the [configuration of ICOc][config].
 
 <a name="page:calibration"></a>
 
