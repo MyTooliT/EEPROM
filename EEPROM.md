@@ -86,7 +86,7 @@ This text specifies the code name of the STH/STU software release
   - Check Digit
 - Currently unused
 
-<a name="value:name"></a>
+<a name="value:manufacture-name"></a>
 
 ##### Manufacture Name
 
