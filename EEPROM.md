@@ -112,9 +112,9 @@ This text specifies the code name of the STH/STU software release
 | 8    | 4      | Operating Time                            | [Little Endian](#term:little-endian) | Unsigned | s    |
 | 12   | 4      | Under Voltage Counter                     | [Little Endian](#term:little-endian) | Unsigned | -    |
 | 16   | 4      | Watchdog Reset Counter                    | [Little Endian](#term:little-endian) | Unsigned | -    |
-| 20   | 4      | Production Date Year                      |                                      | ASCII    | -    |
-| 24   | 2      | Production Date Month                     |                                      | ASCII    | -    |
-| 26   | 2      | Production Date Day                       |                                      | ASCII    | -    |
+| 20   | 4      | Production Date: Year                     |                                      | ASCII    | -    |
+| 24   | 2      | Production Date: Month                    |                                      | ASCII    | -    |
+| 26   | 2      | Production Date: Day                      |                                      | ASCII    | -    |
 
 <a name="value:power-on-cycles"></a>
 
