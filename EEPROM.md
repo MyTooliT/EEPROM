@@ -126,80 +126,26 @@ Please note, that a reset also counts as power on cycle
 
 #### Page `Calibration`
 
-| Byte | Name                         | Comment | Format |
-| ---- | ---------------------------- | ------- | ------ |
-| 0    | Acceleration X: Slope        | LSB     | Float  |
-| 1    | Acceleration X: Slope        |         | Float  |
-| 2    | Acceleration X: Slope        |         | Float  |
-| 3    | Acceleration X: Slope        | MSB     | Float  |
-| 4    | Acceleration X: Offset       | LSB     | Float  |
-| 5    | Acceleration X: Offset       |         | Float  |
-| 6    | Acceleration X: Offset       |         | Float  |
-| 7    | Acceleration X: Offset       | MSB     | Float  |
-| 8    | Acceleration Y: Slope        | LSB     | Float  |
-| 9    | Acceleration Y: Slope        |         | Float  |
-| 10   | Acceleration Y: Slope        |         | Float  |
-| 11   | Acceleration Y: Slope        | MSB     | Float  |
-| 12   | Acceleration Y: Offset       | LSB     | Float  |
-| 13   | Acceleration Y: Offset       |         | Float  |
-| 14   | Acceleration Y: Offset       |         | Float  |
-| 15   | Acceleration Y: Offset       | MSB     | Float  |
-| 16   | Acceleration Z: Slope        | LSB     | Float  |
-| 17   | Acceleration Z: Slope        |         | Float  |
-| 18   | Acceleration Z: Slope        |         | Float  |
-| 19   | Acceleration Z: Slope        | MSB     | Float  |
-| 20   | Acceleration Z: Offset       | LSB     | Float  |
-| 21   | Acceleration Z: Offset       |         | Float  |
-| 22   | Acceleration Z: Offset       |         | Float  |
-| 23   | Acceleration Z: Offset       | MSB     | Float  |
-| 24   | Voltage Battery: Slope       | LSB     | Float  |
-| 25   | Voltage Battery: Slope       |         | Float  |
-| 26   | Voltage Battery: Slope       |         | Float  |
-| 27   | Voltage Battery: Slope       | MSB     | Float  |
-| 28   | Voltage Battery: Offset      | LSB     | Float  |
-| 29   | Voltage Battery: Offset      |         | Float  |
-| 30   | Voltage Battery: Offset      |         | Float  |
-| 31   | Voltage Battery: Offset      | MSB     | Float  |
-| 32   | Voltage 2: Slope             | LSB     | Float  |
-| 33   | Voltage 2: Slope             |         | Float  |
-| 34   | Voltage 2: Slope             |         | Float  |
-| 35   | Voltage 2: Slope             | MSB     | Float  |
-| 36   | Voltage 2: Offset            | LSB     | Float  |
-| 37   | Voltage 2: Offset            |         | Float  |
-| 38   | Voltage 2: Offset            |         | Float  |
-| 39   | Voltage 2: Offset            | MSB     | Float  |
-| 40   | Voltage 3: Slope             | LSB     | Float  |
-| 41   | Voltage 3: Slope             |         | Float  |
-| 42   | Voltage 3: Slope             |         | Float  |
-| 43   | Voltage 3: Slope             | MSB     | Float  |
-| 44   | Voltage 3: Offset            | LSB     | Float  |
-| 45   | Voltage 3: Offset            |         | Float  |
-| 46   | Voltage 3: Offset            |         | Float  |
-| 47   | Voltage 3: Offset            | MSB     | Float  |
-| 48   | Internal Temperature: Slope  | LSB     | Float  |
-| 49   | Internal Temperature: Slope  |         | Float  |
-| 50   | Internal Temperature: Slope  |         | Float  |
-| 51   | Internal Temperature: Slope  | MSB     | Float  |
-| 52   | Internal Temperature: Offset | LSB     | Float  |
-| 53   | Internal Temperature: Offset |         | Float  |
-| 54   | Internal Temperature: Offset |         | Float  |
-| 55   | Internal Temperature: Offset | MSB     | Float  |
-| 56   | Temperature 2: Slope         | LSB     | Float  |
-| 57   | Temperature 2: Slope         |         | Float  |
-| 58   | Temperature 2: Slope         |         | Float  |
-| 59   | Temperature 2: Slope         | MSB     | Float  |
-| 60   | Temperature 2: Offset        | LSB     | Float  |
-| 61   | Temperature 2: Offset        |         | Float  |
-| 62   | Temperature 2: Offset        |         | Float  |
-| 63   | Temperature 2: Offset        | MSB     | Float  |
-| 64   | Temperature 3: Slope         | LSB     | Float  |
-| 65   | Temperature 3: Slope         |         | Float  |
-| 66   | Temperature 3: Slope         |         | Float  |
-| 67   | Temperature 3: Slope         | MSB     | Float  |
-| 68   | Temperature 3: Offset        | LSB     | Float  |
-| 69   | Temperature 3: Offset        |         | Float  |
-| 70   | Temperature 3: Offset        |         | Float  |
-| 71   | Temperature 3: Offset        | MSB     | Float  |
+| Byte | Length | Name                         | Comment                              | Format |
+| ---- | ------ | ---------------------------- | ------------------------------------ | ------ |
+| 0    | 4      | Acceleration X: Slope        | [Little Endian](#term:little-endian) | Float  |
+| 4    | 4      | Acceleration X: Offset       | [Little Endian](#term:little-endian) | Float  |
+| 8    | 4      | Acceleration Y: Slope        | [Little Endian](#term:little-endian) | Float  |
+| 12   | 4      | Acceleration Y: Offset       | [Little Endian](#term:little-endian) | Float  |
+| 16   | 4      | Acceleration Z: Slope        | [Little Endian](#term:little-endian) | Float  |
+| 20   | 4      | Acceleration Z: Offset       | [Little Endian](#term:little-endian) | Float  |
+| 24   | 4      | Voltage Battery: Slope       | [Little Endian](#term:little-endian) | Float  |
+| 28   | 4      | Voltage Battery: Offset      | [Little Endian](#term:little-endian) | Float  |
+| 32   | 4      | Voltage 2: Slope             | [Little Endian](#term:little-endian) | Float  |
+| 36   | 4      | Voltage 2: Offset            | [Little Endian](#term:little-endian) | Float  |
+| 40   | 4      | Voltage 3: Slope             | [Little Endian](#term:little-endian) | Float  |
+| 44   | 4      | Voltage 3: Offset            | [Little Endian](#term:little-endian) | Float  |
+| 48   | 4      | Internal Temperature: Slope  | [Little Endian](#term:little-endian) | Float  |
+| 52   | 4      | Internal Temperature: Offset | [Little Endian](#term:little-endian) | Float  |
+| 56   | 4      | Temperature 2: Slope         | [Little Endian](#term:little-endian) | Float  |
+| 60   | 4      | Temperature 2: Offset        | [Little Endian](#term:little-endian) | Float  |
+| 64   | 4      | Temperature 3: Slope         | [Little Endian](#term:little-endian) | Float  |
+| 68   | 4      | Temperature 3: Offset        | [Little Endian](#term:little-endian) | Float  |
 
 ##### Slope & Offset
 
