@@ -28,19 +28,19 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Product Data`
 
-| Name                     | Address | Length | Read Only | Value | Format   | Comment                                              |
-| ------------------------ | ------- | ------ | --------- | ----- | -------- | ---------------------------------------------------- |
-| GTIN                     | 0       | 8      | True      | 0     | Unsigned |                                                      |
-| Hardware Revision: Major | 13      | 1      | False     | -     | Unsigned | [Major Hardware Revision](#hardware-revision)        |
-| Hardware Revision: Minor | 14      | 1      | False     | -     | Unsigned | [Minor Hardware Revision Number](#hardware-revision) |
-| Hardware Revision: Build | 15      | 1      | False     | -     | Unsigned | [Build Hardware Revision Number](#hardware-revision) |
-| Firmware Version: Major  | 21      | 1      | False     | -     | Unsigned | [Major Firmware Version Number](#software-version)   |
-| Firmware Version: Minor  | 22      | 1      | False     | -     | Unsigned | [Minor Firmware Version Number](#software-version)   |
-| Firmware Version: Build  | 23      | 1      | False     | -     | Unsigned | [Build Firmware Version Number](#software-version)   |
-| Release Name             | 24      | 8      | False     | Tanja | UTF-8    |                                                      |
-| Serial Number            | 32      | 32     | True      | 0     | UTF-8    |                                                      |
-| Manufacture Name         | 64      | 128    | True      | 0     | UTF-8    |                                                      |
-| OEM Free Use             | 192     | 64     | True      | 0     | -        |                                                      |
+| Name                                           | Address | Length | Read Only | Value | Format   |
+| ---------------------------------------------- | ------- | ------ | --------- | ----- | -------- |
+| GTIN                                           | 0       | 8      | True      | 0     | Unsigned |
+| [Hardware Revision: Major](#hardware-revision) | 13      | 1      | False     | -     | Unsigned |
+| [Hardware Revision: Minor](#hardware-revision) | 14      | 1      | False     | -     | Unsigned |
+| [Hardware Revision: Build](#hardware-revision) | 15      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Major](#software-version)   | 21      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Minor](#software-version)   | 22      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Build](#software-version)   | 23      | 1      | False     | -     | Unsigned |
+| Release Name                                   | 24      | 8      | False     | Tanja | UTF-8    |
+| Serial Number                                  | 32      | 32     | True      | 0     | UTF-8    |
+| Manufacture Name                               | 64      | 128    | True      | 0     | UTF-8    |
+| OEM Free Use                                   | 192     | 64     | True      | 0     | -        |
 
 #### Version Numbers
 
