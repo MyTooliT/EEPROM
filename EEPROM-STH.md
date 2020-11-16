@@ -28,7 +28,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Product Data`
 
-| Name                     | Address | Length | Read Only | Value | Format   | Description                                          |
+| Name                     | Address | Length | Read Only | Value | Format   | Comment                                              |
 | ------------------------ | ------- | ------ | --------- | ----- | -------- | ---------------------------------------------------- |
 | GTIN                     | 0       | 8      | True      | 0     | Unsigned |                                                      |
 | Hardware Revision: Major | 13      | 1      | False     | -     | Unsigned | [Major Hardware Revision](#hardware-revision)        |
@@ -51,7 +51,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Statistic`
 
-| Name                                       | Address | Length | Read Only | Value    | Unit    | Format   | Description                                                                       |
+| Name                                       | Address | Length | Read Only | Value    | Unit    | Format   | Comment                                                                           |
 | ------------------------------------------ | ------- | ------ | --------- | -------- | ------- | -------- | --------------------------------------------------------------------------------- |
 | Power ON Cycles                            | 0       | 4      | True      | 0        | -       | Unsigned |                                                                                   |
 | Power OFF Cycles                           | 4       | 4      | True      | 0        | -       | Unsigned | Power Off Cycles since first reset                                                |
@@ -65,7 +65,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Calibration`
 
-| Name                     | Address | Length | Read Only | Value                  | Format | Description                                             |
+| Name                     | Address | Length | Read Only | Value                  | Format | Comment                                                 |
 | ------------------------ | ------- | ------ | --------- | ---------------------- | ------ | ------------------------------------------------------- |
 | Acceleration X - K       | 0       | 4      | False     | 0.0030518043786287308  | Float  | Calibration Factor K for Acceleration X -> y=kx+d       |
 | Acceleration X - D       | 4       | 4      | False     | -99.33318328857422     | Float  | Calibration Factor d for Acceleration X -> y=kx+d       |
