@@ -33,14 +33,14 @@ This file contains the momentary used values of the EEPROM from the STU.
 
 ### Page `Statistic`
 
-| Name                                       | Address | Length | Read Only | Value | Unit    | Format   | Description                                                                   |
-| ------------------------------------------ | ------- | ------ | --------- | ----- | ------- | -------- | ----------------------------------------------------------------------------- |
-| Power ON Cycles                            | 0       | 4      | True      | 0     | -       | unsigned | Power On Cycles since first reset(Note that a resets also counts as power on) |
-| Power OFF Cycles                           | 4       | 4      | True      | 0     | -       | unsigned | Power Off Cycles since first reset                                            |
-| Operating Time since first power On        | 8       | 4      | True      | 0     | seconds | unsigned | Operating Time since first power On in seconds                                |
-| Under Voltage Counter since first power On | 12      | 4      | True      | 0     | -       | unsigned | Counts of under voltages that yields into turn off state(Brown Out)           |
-| Watchdog Reset Counter                     | 16      | 4      | True      | 0     | -       | unsigned | Watchdog Resets since first power on                                          |
-| Production Date: Year                      | 20      | 4      | True      | -     |         | ASCII    |                                                                               |
-| Production Date: Month                     | 24      | 2      | True      | -     |         | ASCII    |                                                                               |
-| Production Date: Day                       | 26      | 2      | True      | -     |         | ASCII    |                                                                               |
-| Batch Number                               | 28      | 4      | True      | 2     | -       | unsigned | Consecutive number for manufactured devices                                   |
+| Name                   | Address | Length | Read Only | Value | Unit    | Format   | Description                                                                   |
+| ---------------------- | ------- | ------ | --------- | ----- | ------- | -------- | ----------------------------------------------------------------------------- |
+| Power On Cycles        | 0       | 4      | True      | 0     | -       | unsigned | Power On Cycles since first reset(Note that a resets also counts as power on) |
+| Power Off Cycles       | 4       | 4      | True      | 0     | -       | unsigned | Power Off Cycles since first reset                                            |
+| Operating Time         | 8       | 4      | True      | 0     | seconds | unsigned | Operating Time since first power On in seconds                                |
+| Under Voltage Counter  | 12      | 4      | True      | 0     | -       | unsigned | Counts of under voltages that yields into turn off state(Brown Out)           |
+| Watchdog Reset Counter | 16      | 4      | True      | 0     | -       | unsigned | Watchdog Resets since first power on                                          |
+| Production Date: Year  | 20      | 4      | True      | -     |         | ASCII    |                                                                               |
+| Production Date: Month | 24      | 2      | True      | -     |         | ASCII    |                                                                               |
+| Production Date: Day   | 26      | 2      | True      | -     |         | ASCII    |                                                                               |
+| Batch Number           | 28      | 4      | True      | 2     | -       | unsigned | Consecutive number for manufactured devices                                   |
