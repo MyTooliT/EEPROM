@@ -24,7 +24,7 @@
 
 | Byte | Length | Name                 | Comment                                                                        | Format   | Unit |
 | ---- | ------ | -------------------- | ------------------------------------------------------------------------------ | -------- | ---- |
-| 0    | 1      | Init                 | • `0xAC`: Initialized <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
+| 0    | 1      | Init                 | • `0xac`: Initialized <br> • `0xca`: Locked <br> • Other Value: Uninitialized) | -        | -    |
 | 1    | 8      | Radio Name           | Bluetooth advertisement name                                                   | ASCII    | -    |
 | 9    | 4      | Sleep Time 1         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
 | 13   | 2      | Advertisement Time 1 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
