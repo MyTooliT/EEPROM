@@ -28,24 +28,24 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Product Data`
 
-| Name                                           | Address | Length | Read Only | Value | Format   |
-| ---------------------------------------------- | ------- | ------ | --------- | ----- | -------- |
-| GTIN                                           | 0       | 8      | True      | 0     | Unsigned |
-| [Hardware Revision: Major](#hardware-revision) | 13      | 1      | False     | -     | Unsigned |
-| [Hardware Revision: Minor](#hardware-revision) | 14      | 1      | False     | -     | Unsigned |
-| [Hardware Revision: Build](#hardware-revision) | 15      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Major](#firmware-version)   | 21      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Minor](#firmware-version)   | 22      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Build](#firmware-version)   | 23      | 1      | False     | -     | Unsigned |
-| [Release Name](#value:release-name)            | 24      | 8      | False     | Tanja | UTF-8    |
-| Serial Number                                  | 32      | 32     | True      | 0     | UTF-8    |
-| Manufacture Name                               | 64      | 128    | True      | 0     | UTF-8    |
-| OEM Free Use                                   | 192     | 64     | True      | 0     | -        |
+| Name                                                 | Address | Length | Read Only | Value | Format   |
+| ---------------------------------------------------- | ------- | ------ | --------- | ----- | -------- |
+| GTIN                                                 | 0       | 8      | True      | 0     | Unsigned |
+| [Hardware Revision: Major](#value:hardware-revision) | 13      | 1      | False     | -     | Unsigned |
+| [Hardware Revision: Minor](#value:hardware-revision) | 14      | 1      | False     | -     | Unsigned |
+| [Hardware Revision: Build](#value:hardware-revision) | 15      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Major](#value:firmware-version)   | 21      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Minor](#value:firmware-version)   | 22      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Build](#value:firmware-version)   | 23      | 1      | False     | -     | Unsigned |
+| [Release Name](#value:release-name)                  | 24      | 8      | False     | Tanja | UTF-8    |
+| Serial Number                                        | 32      | 32     | True      | 0     | UTF-8    |
+| Manufacture Name                                     | 64      | 128    | True      | 0     | UTF-8    |
+| OEM Free Use                                         | 192     | 64     | True      | 0     | -        |
 
 #### Version Numbers
 
-- <a name="hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
-- <a name="firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
+- <a name="value:hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
+- <a name="value:firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
 - <a name="value:release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
 
 [config]: https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml
