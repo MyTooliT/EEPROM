@@ -34,9 +34,9 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | [Hardware Revision: Major](#hardware-revision) | 13      | 1      | False     | -     | Unsigned |
 | [Hardware Revision: Minor](#hardware-revision) | 14      | 1      | False     | -     | Unsigned |
 | [Hardware Revision: Build](#hardware-revision) | 15      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Major](#software-version)   | 21      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Minor](#software-version)   | 22      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Build](#software-version)   | 23      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Major](#firmware-version)   | 21      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Minor](#firmware-version)   | 22      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Build](#firmware-version)   | 23      | 1      | False     | -     | Unsigned |
 | Release Name                                   | 24      | 8      | False     | Tanja | UTF-8    |
 | Serial Number                                  | 32      | 32     | True      | 0     | UTF-8    |
 | Manufacture Name                               | 64      | 128    | True      | 0     | UTF-8    |
