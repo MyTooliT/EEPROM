@@ -12,7 +12,7 @@
 | 0           | [System Configuration](#page:system-configuration) | Store system specific data e.g. Bluetooth name and advertisement time                               |
 | 4           | [Product Data](#page:product-data)                 | Store product data e.g. serial number                                                               |
 | 5           | [Statistic](#page:statistic)                       | Store statistic data e.g. power on/off cycles                                                       |
-| 8           | [Calibration](#page:calibration)                   | Store configuration data like Slope (`k`) and offset (`d`) values to derive SI value from ADC value |
+| 8           | [Calibration](#page:calibration)                   | Store configuration data like slope (`k`) and offset (`d`) values to derive SI value from ADC value |
 
 <a name="page:system-configuration"></a>
 
