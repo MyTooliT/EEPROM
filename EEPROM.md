@@ -47,14 +47,14 @@
 | Byte | Length | Name                                        | Comment                              | Format   |
 | ---- | ------ | ------------------------------------------- | ------------------------------------ | -------- |
 | 0    | 8      | Global Trade Identification Number (GTIN)   | [Little Endian](#term:little-endian) | Unsigned |
-| 8    | 5      | Hardware Revision - Reserved                |                                      | –        |
-| 13   | 1      | Hardware Revision - Major                   |                                      | Unsigned |
-| 14   | 1      | Hardware Revision - Minor                   |                                      | Unsigned |
-| 15   | 1      | Hardware Revision - Build                   |                                      | Unsigned |
-| 16   | 5      | Firmware Version - Reserved                 |                                      | –        |
-| 21   | 1      | Firmware Version - Major                    |                                      | Unsigned |
-| 22   | 1      | Firmware Version - Minor                    |                                      | Unsigned |
-| 23   | 1      | Firmware Version - Build                    |                                      | Unsigned |
+| 8    | 5      | Hardware Revision: Reserved                 |                                      | –        |
+| 13   | 1      | Hardware Revision: Major                    |                                      | Unsigned |
+| 14   | 1      | Hardware Revision: Minor                    |                                      | Unsigned |
+| 15   | 1      | Hardware Revision: Build                    |                                      | Unsigned |
+| 16   | 5      | Firmware Version: Reserved                  |                                      | –        |
+| 21   | 1      | Firmware Version: Major                     |                                      | Unsigned |
+| 22   | 1      | Firmware Version: Minor                     |                                      | Unsigned |
+| 23   | 1      | Firmware Version: Build                     |                                      | Unsigned |
 | 24   | 8      | [Release Name](#value:release-name)         |                                      | UTF-8    |
 | 32   | 32     | [Serial Number](#value:serial-number)       |                                      | UTF-8    |
 | 64   | 128    | [Manufacture Name](#value:manufacture-name) |                                      | UTF-8    |
