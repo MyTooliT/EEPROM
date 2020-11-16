@@ -76,26 +76,10 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Calibration`
 
-| Name                                                   | Address | Length | Read Only | Value                         | Format |
-| ------------------------------------------------------ | ------- | ------ | --------- | ----------------------------- | ------ |
-| [Acceleration X: Slope](#value:acceleration-x-slope)   | 0       | 4      | False     | -                             | Float  |
-| [Acceleration X: Offset](#value:acceleration-x-offset) | 4       | 4      | False     | -                             | Float  |
-| Acceleration Y: Slope                                  | 8       | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Acceleration Y: Offset                                 | 12      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Acceleration Z: Slope                                  | 16      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Acceleration Z: Offset                                 | 20      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Voltage Battery: Slope                                 | 24      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Voltage Battery: Offset                                | 28      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Voltage 2: Slope                                       | 32      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Voltage 2: Offset                                      | 36      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Voltage 3: Slope                                       | 40      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Voltage 3: Offset                                      | 44      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Internal Temperature: Slope                            | 48      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Internal Temperature: Offset                           | 52      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Temperature 2: Slope                                   | 56      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Temperature 2: Offset                                  | 60      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Temperature 3: Slope                                   | 64      | 4      | False     | [Undefined](#value:undefined) | Float  |
-| Temperature 3: Offset                                  | 68      | 4      | False     | [Undefined](#value:undefined) | Float  |
+| Name                                                   | Address | Length | Read Only | Value | Format |
+| ------------------------------------------------------ | ------- | ------ | --------- | ----- | ------ |
+| [Acceleration X: Slope](#value:acceleration-x-slope)   | 0       | 4      | False     | -     | Float  |
+| [Acceleration X: Offset](#value:acceleration-x-offset) | 4       | 4      | False     | -     | Float  |
 
 #### Acceleration
 
@@ -117,9 +101,3 @@ This file contains the default values of the STH EEPROM. For a more detailed des
   $$
 
   Here $a_{max}$ is the maximum acceleration difference (e.g. `100` for a ±50 g sensor)
-
-<a name="value:undefined"></a>
-
-#### Undefined Values
-
-These are values that are currently not initialized by the tests of ICOc
