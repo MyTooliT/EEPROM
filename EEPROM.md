@@ -1,5 +1,9 @@
 # EEPROM
 
+## Terms
+
+- <a name="term:little-endian">Little Endian</a>: Store the least significant byte (LSB) at the first (smallest) memory address and the most significant byte at the last (highest) memory address
+
 ## Layout
 
 - Every page consists of 256 bytes
@@ -18,29 +22,14 @@
 
 #### Page `System Configuration`
 
-| Byte | Name                 | Comment                                                                        | Format   | Unit |
-| ---- | -------------------- | ------------------------------------------------------------------------------ | -------- | ---- |
-| 0    | Init                 | • `0xAC`: Initialized <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
-| 1    | Radio Name 0         |                                                                                | ASCII    | -    |
-| 2    | Radio Name 1         |                                                                                | ASCII    | -    |
-| 3    | Radio Name 2         |                                                                                | ASCII    | -    |
-| 4    | Radio Name 3         |                                                                                | ASCII    | -    |
-| 5    | Radio Name 4         |                                                                                | ASCII    | -    |
-| 6    | Radio Name 5         |                                                                                | ASCII    | -    |
-| 7    | Radio Name 6         |                                                                                | ASCII    | -    |
-| 8    | Radio Name 7         |                                                                                | ASCII    | -    |
-| 9    | Sleep Time 1         | LSB                                                                            | Unsigned | ms   |
-| 10   | Sleep Time 1         |                                                                                | Unsigned | ms   |
-| 11   | Sleep Time 1         |                                                                                | Unsigned | ms   |
-| 12   | Sleep Time 1         | MSB                                                                            | Unsigned | ms   |
-| 13   | Advertisement Time 1 | LSB                                                                            | Unsigned | ms   |
-| 14   | Advertisement Time 1 | MSB                                                                            | Unsigned | ms   |
-| 15   | Sleep Time 2         | LSB                                                                            | Unsigned | ms   |
-| 16   | Sleep Time 2         |                                                                                | Unsigned | ms   |
-| 17   | Sleep Time 2         |                                                                                | Unsigned | ms   |
-| 18   | Sleep Time 2         | MSB                                                                            | Unsigned | ms   |
-| 19   | Advertisement Time 2 | LSB                                                                            | Unsigned | ms   |
-| 20   | Advertisement Time 2 | MSB                                                                            | Unsigned | ms   |
+| Byte    | Length | Name                 | Comment                                                                        | Format   | Unit |
+| ------- | ------ | -------------------- | ------------------------------------------------------------------------------ | -------- | ---- |
+| 0       | 1      | Init                 | • `0xAC`: Initialized <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
+| 1 – 8   | 8      | Radio Name           | Bluetooth advertisement name                                                   | ASCII    | -    |
+| 9 – 12  | 4      | Sleep Time 1         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| 13 – 14 | 2      | Advertisement Time 1 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| 15 – 18 | 4      | Sleep Time 2         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| 19 – 20 | 2      | Advertisement Time 2 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
 
 ##### Sleep & Advertisement Times
 
