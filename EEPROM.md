@@ -22,14 +22,14 @@
 
 #### Page `System Configuration`
 
-| Byte    | Length | Name                 | Comment                                                                        | Format   | Unit |
-| ------- | ------ | -------------------- | ------------------------------------------------------------------------------ | -------- | ---- |
-| 0       | 1      | Init                 | • `0xAC`: Initialized <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
-| 1 – 8   | 8      | Radio Name           | Bluetooth advertisement name                                                   | ASCII    | -    |
-| 9 – 12  | 4      | Sleep Time 1         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
-| 13 – 14 | 2      | Advertisement Time 1 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
-| 15 – 18 | 4      | Sleep Time 2         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
-| 19 – 20 | 2      | Advertisement Time 2 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| Byte | Length | Name                 | Comment                                                                        | Format   | Unit |
+| ---- | ------ | -------------------- | ------------------------------------------------------------------------------ | -------- | ---- |
+| 0    | 1      | Init                 | • `0xAC`: Initialized <br> • `0xCA`: Locked <br> • Other Value: Uninitialized) | -        | -    |
+| 1    | 8      | Radio Name           | Bluetooth advertisement name                                                   | ASCII    | -    |
+| 9    | 4      | Sleep Time 1         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| 13   | 2      | Advertisement Time 1 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| 15   | 4      | Sleep Time 2         | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
+| 19   | 2      | Advertisement Time 2 | [Little Endian](#term:little-endian)                                           | Unsigned | ms   |
 
 ##### Sleep & Advertisement Times
 
@@ -44,21 +44,21 @@
 
 #### Page `Product Data`
 
-| Byte      | Length | Name                                        | Comment                              | Format   |
-| --------- | ------ | ------------------------------------------- | ------------------------------------ | -------- |
-| 0 – 7     | 8      | Global Trade Identification Number (GTIN)   | [Little Endian](#term:little-endian) | Unsigned |
-| 8 – 12    | 5      | Hardware Revision - Reserved                |                                      | –        |
-| 13        | 1      | Hardware Revision - Major                   |                                      | Unsigned |
-| 14        | 1      | Hardware Revision - Minor                   |                                      | Unsigned |
-| 15        | 1      | Hardware Revision - Build                   |                                      | Unsigned |
-| 16 – 20   | 5      | Firmware Version - Reserved                 |                                      | –        |
-| 21        | 1      | Firmware Version - Major                    |                                      | Unsigned |
-| 22        | 1      | Firmware Version - Minor                    |                                      | Unsigned |
-| 23        | 1      | Firmware Version - Build                    |                                      | Unsigned |
-| 24 - 31   | 8      | [Release Name](#value:release-name)         |                                      | UTF-8    |
-| 32 - 63   | 32     | [Serial Number](#value:serial-number)       |                                      | UTF-8    |
-| 64 - 191  | 128    | [Manufacture Name](#value:manufacture-name) |                                      | UTF-8    |
-| 192 - 255 | 64     | [OEM Free Use](#value:oem-free-use)         |                                      | -        |
+| Byte | Length | Name                                        | Comment                              | Format   |
+| ---- | ------ | ------------------------------------------- | ------------------------------------ | -------- |
+| 0    | 8      | Global Trade Identification Number (GTIN)   | [Little Endian](#term:little-endian) | Unsigned |
+| 8    | 5      | Hardware Revision - Reserved                |                                      | –        |
+| 13   | 1      | Hardware Revision - Major                   |                                      | Unsigned |
+| 14   | 1      | Hardware Revision - Minor                   |                                      | Unsigned |
+| 15   | 1      | Hardware Revision - Build                   |                                      | Unsigned |
+| 16   | 5      | Firmware Version - Reserved                 |                                      | –        |
+| 21   | 1      | Firmware Version - Major                    |                                      | Unsigned |
+| 22   | 1      | Firmware Version - Minor                    |                                      | Unsigned |
+| 23   | 1      | Firmware Version - Build                    |                                      | Unsigned |
+| 24   | 8      | [Release Name](#value:release-name)         |                                      | UTF-8    |
+| 32   | 32     | [Serial Number](#value:serial-number)       |                                      | UTF-8    |
+| 64   | 128    | [Manufacture Name](#value:manufacture-name) |                                      | UTF-8    |
+| 192  | 64     | [OEM Free Use](#value:oem-free-use)         |                                      | -        |
 
 ##### Version Numbers
 
@@ -105,16 +105,16 @@ This text specifies the code name of the STH/STU software release
 
 #### Page `Statistic`
 
-| Byte    | Length | Name                                      | Comment                              | Format   | Unit |
-| ------- | ------ | ----------------------------------------- | ------------------------------------ | -------- | ---- |
-| 0 – 3   | 4      | [Power On Cycles](#value:power-on-cycles) | [Little Endian](#term:little-endian) | Unsigned | -    |
-| 4 – 7   | 4      | Power Off Cycles                          | [Little Endian](#term:little-endian) | Unsigned | -    |
-| 8 – 11  | 4      | Operating Time                            | [Little Endian](#term:little-endian) | Unsigned | s    |
-| 12 – 15 | 4      | Under Voltage Counter                     | [Little Endian](#term:little-endian) | Unsigned | -    |
-| 16 – 19 | 4      | WatchDog Reset Cause                      | [Little Endian](#term:little-endian) | Unsigned | -    |
-| 20 – 23 | 4      | Production Date Year                      |                                      | ASCII    | -    |
-| 24 – 25 | 2      | Production Date Month                     |                                      | ASCII    | -    |
-| 26 – 27 | 2      | Production Date Day                       |                                      | ASCII    | -    |
+| Byte | Length | Name                                      | Comment                              | Format   | Unit |
+| ---- | ------ | ----------------------------------------- | ------------------------------------ | -------- | ---- |
+| 0    | 4      | [Power On Cycles](#value:power-on-cycles) | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 4    | 4      | Power Off Cycles                          | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 8    | 4      | Operating Time                            | [Little Endian](#term:little-endian) | Unsigned | s    |
+| 12   | 4      | Under Voltage Counter                     | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 16   | 4      | WatchDog Reset Cause                      | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 20   | 4      | Production Date Year                      |                                      | ASCII    | -    |
+| 24   | 2      | Production Date Month                     |                                      | ASCII    | -    |
+| 26   | 2      | Production Date Day                       |                                      | ASCII    | -    |
 
 <a name="value:power-on-cycles"></a>
 
