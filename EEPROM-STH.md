@@ -75,23 +75,23 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `Calibration`
 
-| Name                     | Address | Length | Read Only | Value                  | Format | Comment                                                 |
-| ------------------------ | ------- | ------ | --------- | ---------------------- | ------ | ------------------------------------------------------- |
-| Acceleration X - K       | 0       | 4      | False     | 0.0030518043786287308  | Float  | Calibration Factor K for Acceleration X -> y=kx+d       |
-| Acceleration X - D       | 4       | 4      | False     | -99.33318328857422     | Float  | Calibration Factor d for Acceleration X -> y=kx+d       |
-| Acceleration Y - K       | 8       | 4      | False     | 1.0                    | Float  | Calibration Factor K for Acceleration Y -> y=kx+d       |
-| Acceleration Y - D       | 12      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Acceleration Y -> y=kx+d       |
-| Acceleration Z - K       | 16      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Acceleration Z -> y=kx+d       |
-| Acceleration Z - D       | 20      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Acceleration Z -> y=kx+d       |
-| Voltage Battery - K      | 24      | 4      | False     | 0.00028701781411655247 | Float  | Calibration Factor K for Battery Voltage -> y=kx+d      |
-| Voltage Battery - D      | 28      | 4      | False     | -0.09040877968072891   | Float  | Calibration Factor d for Battery Voltage -> y=kx+d      |
-| Voltage Y - K            | 32      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Voltage Y -> y=kx+d            |
-| Voltage Y - D            | 36      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Voltage Y -> y=kx+d            |
-| Voltage Z - K            | 40      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Voltage Z -> y=kx+d            |
-| Voltage Z - D            | 44      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Voltage Z -> y=kx+d            |
-| Internal Temperature - K | 48      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Internal Temperature -> y=kx+d |
-| Internal Temperature - D | 52      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Internal Temperature -> y=kx+d |
-| Temperature Y - K        | 56      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Y -> y=kx+d        |
-| Temperature Y - D        | 60      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Y -> y=kx+d        |
-| Temperature Z - K        | 64      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Z -> y=kx+d        |
-| Temperature Z - D        | 68      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Z -> y=kx+d        |
+| Name                         | Address | Length | Read Only | Value                  | Format | Comment                                                 |
+| ---------------------------- | ------- | ------ | --------- | ---------------------- | ------ | ------------------------------------------------------- |
+| Acceleration X: Slope        | 0       | 4      | False     | 0.0030518043786287308  | Float  | Calibration Factor K for Acceleration X -> y=kx+d       |
+| Acceleration X: Offset       | 4       | 4      | False     | -99.33318328857422     | Float  | Calibration Factor d for Acceleration X -> y=kx+d       |
+| Acceleration Y: Slope        | 8       | 4      | False     | 1.0                    | Float  | Calibration Factor K for Acceleration Y -> y=kx+d       |
+| Acceleration Y: Offset       | 12      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Acceleration Y -> y=kx+d       |
+| Acceleration Z: Slope        | 16      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Acceleration Z -> y=kx+d       |
+| Acceleration Z: Offset       | 20      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Acceleration Z -> y=kx+d       |
+| Voltage Battery: Slope       | 24      | 4      | False     | 0.00028701781411655247 | Float  | Calibration Factor K for Battery Voltage -> y=kx+d      |
+| Voltage Battery: Offset      | 28      | 4      | False     | -0.09040877968072891   | Float  | Calibration Factor d for Battery Voltage -> y=kx+d      |
+| Voltage 2: Slope             | 32      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Voltage Y -> y=kx+d            |
+| Voltage 2: Offset            | 36      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Voltage Y -> y=kx+d            |
+| Voltage 3: Slope             | 40      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Voltage Z -> y=kx+d            |
+| Voltage 3: Offset            | 44      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Voltage Z -> y=kx+d            |
+| Internal Temperature: Slope  | 48      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Internal Temperature -> y=kx+d |
+| Internal Temperature: Offset | 52      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Internal Temperature -> y=kx+d |
+| Temperature 2: Slope         | 56      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Y -> y=kx+d        |
+| Temperature 2: Offset        | 60      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Y -> y=kx+d        |
+| Temperature 3: Slope         | 64      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Z -> y=kx+d        |
+| Temperature 3: Offset        | 68      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Z -> y=kx+d        |
