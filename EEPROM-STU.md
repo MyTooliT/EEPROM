@@ -1,6 +1,6 @@
 # EEPROM-STU
 
-This file contains the momentary used values of the EEPROM from the STU.
+This file contains the default values for the STU EEPROM. For a more detailed description of the values, please take a look at the [description of the EEPROM layout](EEPROM.md).
 
 ## Used Pages
 
