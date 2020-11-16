@@ -105,36 +105,16 @@ This text specifies the code name of the STH/STU software release
 
 #### Page `Statistic`
 
-| Byte | Name                                      | Comment | Format   | Unit |
-| ---- | ----------------------------------------- | ------- | -------- | ---- |
-| 0    | [Power On Cycles](#value:power-on-cycles) | LSB     | Unsigned | -    |
-| 1    | [Power On Cycles](#value:power-on-cycles) |         | Unsigned | -    |
-| 2    | [Power On Cycles](#value:power-on-cycles) |         | Unsigned | -    |
-| 3    | [Power On Cycles](#value:power-on-cycles) | MSB     | Unsigned | -    |
-| 4    | Power Off Cycles                          | LSB     | Unsigned | -    |
-| 5    | Power Off Cycles                          |         | Unsigned | -    |
-| 6    | Power Off Cycles                          |         | Unsigned | -    |
-| 7    | Power Off Cycles                          | MSB     | Unsigned | -    |
-| 8    | Operating Time                            | LSB     | Unsigned | s    |
-| 9    | Operating Time                            |         | Unsigned | s    |
-| 10   | Operating Time                            |         | Unsigned | s    |
-| 11   | Operating Time                            | MSB     | Unsigned | s    |
-| 12   | Under Voltage Counter                     | LSB     | Unsigned | -    |
-| 13   | Under Voltage Counter                     |         | Unsigned | -    |
-| 14   | Under Voltage Counter                     |         | Unsigned | -    |
-| 15   | Under Voltage Counter                     | MSB     | Unsigned | -    |
-| 16   | WatchDog Reset Cause                      | LSB     | Unsigned | -    |
-| 17   | WatchDog Reset Cause                      |         | Unsigned | -    |
-| 18   | WatchDog Reset Cause                      |         | Unsigned | -    |
-| 19   | WatchDog Reset Cause                      | MSB     | Unsigned | -    |
-| 20   | Production Date Year                      |         | ASCII    | -    |
-| 21   | Production Date Year                      |         | ASCII    | -    |
-| 22   | Production Date Year                      |         | ASCII    | -    |
-| 23   | Production Date Year                      |         | ASCII    | -    |
-| 24   | Production Date Month                     |         | ASCII    | -    |
-| 25   | Production Date Month                     |         | ASCII    | -    |
-| 26   | Production Date Day                       |         | ASCII    | -    |
-| 27   | Production Date Day                       |         | ASCII    | -    |
+| Byte    | Length | Name                                      | Comment                              | Format   | Unit |
+| ------- | ------ | ----------------------------------------- | ------------------------------------ | -------- | ---- |
+| 0 – 3   | 4      | [Power On Cycles](#value:power-on-cycles) | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 4 – 7   | 4      | Power Off Cycles                          | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 8 – 11  | 4      | Operating Time                            | [Little Endian](#term:little-endian) | Unsigned | s    |
+| 12 – 15 | 4      | Under Voltage Counter                     | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 16 – 19 | 4      | WatchDog Reset Cause                      | [Little Endian](#term:little-endian) | Unsigned | -    |
+| 20 – 23 | 4      | Production Date Year                      |                                      | ASCII    | -    |
+| 24 – 25 | 2      | Production Date Month                     |                                      | ASCII    | -    |
+| 26 – 27 | 2      | Production Date Day                       |                                      | ASCII    | -    |
 
 <a name="value:power-on-cycles"></a>
 
