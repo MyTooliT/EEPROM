@@ -105,23 +105,29 @@ This text specifies the code name of the STH/STU software release
 
 #### Page `Statistic`
 
-| Byte | Length | Name                                      | Comment                                     | Format   | Unit |
-| ---- | ------ | ----------------------------------------- | ------------------------------------------- | -------- | ---- |
-| 0    | 4      | [Power On Cycles](#value:power-on-cycles) | [Little Endian](#term:little-endian)        | Unsigned | -    |
-| 4    | 4      | Power Off Cycles                          | [Little Endian](#term:little-endian)        | Unsigned | -    |
-| 8    | 4      | Operating Time                            | [Little Endian](#term:little-endian)        | Unsigned | s    |
-| 12   | 4      | Under Voltage Counter                     | [Little Endian](#term:little-endian)        | Unsigned | -    |
-| 16   | 4      | Watchdog Reset Counter                    | [Little Endian](#term:little-endian)        | Unsigned | -    |
-| 20   | 4      | Production Date: Year                     |                                             | ASCII    | -    |
-| 24   | 2      | Production Date: Month                    |                                             | ASCII    | -    |
-| 26   | 2      | Production Date: Day                      |                                             | ASCII    | -    |
-| 28   | 4      | Batch Number                              | Consecutive number for manufactured devices | ASCII    | -    |
+| Byte | Length | Name                                                  | Comment                                     | Format   | Unit |
+| ---- | ------ | ----------------------------------------------------- | ------------------------------------------- | -------- | ---- |
+| 0    | 4      | [Power On Cycles](#value:power-on-cycles)             | [Little Endian](#term:little-endian)        | Unsigned | -    |
+| 4    | 4      | Power Off Cycles                                      | [Little Endian](#term:little-endian)        | Unsigned | -    |
+| 8    | 4      | Operating Time                                        | [Little Endian](#term:little-endian)        | Unsigned | s    |
+| 12   | 4      | [Under Voltage Counter](#value:under-voltage-counter) | [Little Endian](#term:little-endian)        | Unsigned | -    |
+| 16   | 4      | Watchdog Reset Counter                                | [Little Endian](#term:little-endian)        | Unsigned | -    |
+| 20   | 4      | Production Date: Year                                 |                                             | ASCII    | -    |
+| 24   | 2      | Production Date: Month                                |                                             | ASCII    | -    |
+| 26   | 2      | Production Date: Day                                  |                                             | ASCII    | -    |
+| 28   | 4      | Batch Number                                          | Consecutive number for manufactured devices | ASCII    | -    |
 
 <a name="value:power-on-cycles"></a>
 
 ##### Power On Cycles
 
 Please note, that a reset also counts as power on cycle
+
+<a name="value:under-voltage-counter"></a>
+
+##### Under Voltage Counter
+
+Counts of under voltages that cause turn off state (brownout)
 
 <a name="page:calibration"></a>
 
