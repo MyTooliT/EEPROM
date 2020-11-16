@@ -2,7 +2,7 @@
 
 ## Terms
 
-- <a name="term:little-endian">Little Endian</a>: Store the least significant byte (LSB) at the first (smallest) memory address and the most significant byte at the last (highest) memory address
+- <a name="term:little-endian">Little Endian</a>: Store the least significant byte (LSB) at the first (smallest) memory address and the most significant byte (MSB) at the last (highest) memory address
 
 ## Layout
 
