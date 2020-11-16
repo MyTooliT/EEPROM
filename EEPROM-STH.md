@@ -38,15 +38,18 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | [Firmware Version: Minor](#value:firmware-version)   | 22      | 1      | False     | -     | Unsigned |
 | [Firmware Version: Build](#value:firmware-version)   | 23      | 1      | False     | -     | Unsigned |
 | [Release Name](#value:release-name)                  | 24      | 8      | False     | Tanja | UTF-8    |
-| Serial Number                                        | 32      | 32     | True      | 0     | UTF-8    |
-| Manufacture Name                                     | 64      | 128    | True      | 0     | UTF-8    |
-| OEM Free Use                                         | 192     | 64     | True      | 0     | -        |
+| [Serial Number](#value:serial-number)                | 32      | 32     | True      | 0     | UTF-8    |
+| [Manufacture Name](#value:manufacture-name)          | 64      | 128    | True      | 0     | UTF-8    |
+| [OEM Free Use](#value:oem-free-use)                  | 192     | 64     | True      | 0     | -        |
 
 #### Version Numbers
 
 - <a name="value:hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
 - <a name="value:firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
 - <a name="value:release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:serial-number"></a> **Serial Number**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:manufacture-name"></a> **Manufacture Name**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:oem-free-use"></a> **OEM Free Use**: This value can be changed in the [configuration of ICOc][config].
 
 [config]: https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml
 
