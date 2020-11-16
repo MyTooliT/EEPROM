@@ -21,7 +21,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | STH Name             | 1       | 8      | False     | Base64 encoded Bluetooth MAC address | -    | UTF-8    |
 | Sleep Time 1         | 9       | 4      | False     | 300000                               | ms   | Unsigned |
 | Advertisement Time 1 | 13      | 2      | False     | 2000                                 | ms   | Unsigned |
-| Sleep time 2         | 15      | 4      | False     | 259200000                            | ms   | Unsigned |
+| Sleep Time 2         | 15      | 4      | False     | 259200000                            | ms   | Unsigned |
 | Advertisement Time 2 | 19      | 2      | False     | 4000                                 | ms   | Unsigned |
 
 <a name="page:product-data"></a>
@@ -53,13 +53,13 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 | Name                                       | Address | Length | Read Only | Value    | Unit    | Format   | Description                                                                       |
 | ------------------------------------------ | ------- | ------ | --------- | -------- | ------- | -------- | --------------------------------------------------------------------------------- |
-| Power ON Cycles                            | 0       | 4      | True      | 0        | -       | unsigned |                                                                                   |
-| Power OFF Cycles                           | 4       | 4      | True      | 0        | -       | unsigned | Power Off Cycles since first reset                                                |
-| Operating Time since first power On        | 8       | 4      | True      | 0        | seconds | unsigned | Operating Time since first power On in seconds                                    |
-| Under Voltage Counter since first power On | 12      | 4      | True      | 0        | -       | unsigned | Counts of under voltages that yields into turn off state(Brown Out)               |
-| Watchdog Reset Counter                     | 16      | 4      | True      | 0        | -       | unsigned | Watchdog Resets since first power on                                              |
+| Power ON Cycles                            | 0       | 4      | True      | 0        | -       | Unsigned |                                                                                   |
+| Power OFF Cycles                           | 4       | 4      | True      | 0        | -       | Unsigned | Power Off Cycles since first reset                                                |
+| Operating Time since first power On        | 8       | 4      | True      | 0        | seconds | Unsigned | Operating Time since first power On in seconds                                    |
+| Under Voltage Counter since first power On | 12      | 4      | True      | 0        | -       | Unsigned | Counts of under voltages that yields into turn off state(Brown Out)               |
+| Watchdog Reset Counter                     | 16      | 4      | True      | 0        | -       | Unsigned | Watchdog Resets since first power on                                              |
 | Production Date                            | 20      | 8      | False     | 20191216 | date    | ASCII    | Production Date (EEPROM Production Write) in the format yyyymmdd (year month day) |
-| Batch Number                               | 28      | 4      | True      | 112      | -       | unsigned | Consecutive number for manufactured devices                                       |
+| Batch Number                               | 28      | 4      | True      | 112      | -       | Unsigned | Consecutive number for manufactured devices                                       |
 
 <a name="page:calibration"></a>
 
@@ -67,21 +67,21 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 | Name                     | Address | Length | Read Only | Value                  | Format | Description                                             |
 | ------------------------ | ------- | ------ | --------- | ---------------------- | ------ | ------------------------------------------------------- |
-| Acceleration X - K       | 0       | 4      | False     | 0.0030518043786287308  | float  | Calibration Factor K for Acceleration X -> y=kx+d       |
-| Acceleration X - D       | 4       | 4      | False     | -99.33318328857422     | float  | Calibration Factor d for Acceleration X -> y=kx+d       |
-| Acceleration Y - K       | 8       | 4      | False     | 1.0                    | float  | Calibration Factor K for Acceleration Y -> y=kx+d       |
-| Acceleration Y - D       | 12      | 4      | False     | 0.0                    | float  | Calibration Factor d for Acceleration Y -> y=kx+d       |
-| Acceleration Z - K       | 16      | 4      | False     | 1.0                    | float  | Calibration Factor K for Acceleration Z -> y=kx+d       |
-| Acceleration Z - D       | 20      | 4      | False     | 0.0                    | float  | Calibration Factor d for Acceleration Z -> y=kx+d       |
-| Voltage Battery - K      | 24      | 4      | False     | 0.00028701781411655247 | float  | Calibration Factor K for Battery Voltage -> y=kx+d      |
-| Voltage Battery - D      | 28      | 4      | False     | -0.09040877968072891   | float  | Calibration Factor d for Battery Voltage -> y=kx+d      |
-| Voltage Y - K            | 32      | 4      | False     | 1.0                    | float  | Calibration Factor K for Voltage Y -> y=kx+d            |
-| Voltage Y - D            | 36      | 4      | False     | 0.0                    | float  | Calibration Factor d for Voltage Y -> y=kx+d            |
-| Voltage Z - K            | 40      | 4      | False     | 1.0                    | float  | Calibration Factor K for Voltage Z -> y=kx+d            |
-| Voltage Z - D            | 44      | 4      | False     | 0.0                    | float  | Calibration Factor d for Voltage Z -> y=kx+d            |
-| Internal Temperature - K | 48      | 4      | False     | 1.0                    | float  | Calibration Factor K for Internal Temperature -> y=kx+d |
-| Internal Temperature - D | 52      | 4      | False     | 0.0                    | float  | Calibration Factor d for Internal Temperature -> y=kx+d |
-| Temperature Y - K        | 56      | 4      | False     | 1.0                    | float  | Calibration Factor K for Temperature Y -> y=kx+d        |
-| Temperature Y - D        | 60      | 4      | False     | 0.0                    | float  | Calibration Factor d for Temperature Y -> y=kx+d        |
-| Temperature Z - K        | 66      | 4      | False     | 1.0                    | float  | Calibration Factor K for Temperature Z -> y=kx+d        |
-| Temperature Z - D        | 70      | 4      | False     | 0.0                    | float  | Calibration Factor d for Temperature Z -> y=kx+d        |
+| Acceleration X - K       | 0       | 4      | False     | 0.0030518043786287308  | Float  | Calibration Factor K for Acceleration X -> y=kx+d       |
+| Acceleration X - D       | 4       | 4      | False     | -99.33318328857422     | Float  | Calibration Factor d for Acceleration X -> y=kx+d       |
+| Acceleration Y - K       | 8       | 4      | False     | 1.0                    | Float  | Calibration Factor K for Acceleration Y -> y=kx+d       |
+| Acceleration Y - D       | 12      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Acceleration Y -> y=kx+d       |
+| Acceleration Z - K       | 16      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Acceleration Z -> y=kx+d       |
+| Acceleration Z - D       | 20      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Acceleration Z -> y=kx+d       |
+| Voltage Battery - K      | 24      | 4      | False     | 0.00028701781411655247 | Float  | Calibration Factor K for Battery Voltage -> y=kx+d      |
+| Voltage Battery - D      | 28      | 4      | False     | -0.09040877968072891   | Float  | Calibration Factor d for Battery Voltage -> y=kx+d      |
+| Voltage Y - K            | 32      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Voltage Y -> y=kx+d            |
+| Voltage Y - D            | 36      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Voltage Y -> y=kx+d            |
+| Voltage Z - K            | 40      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Voltage Z -> y=kx+d            |
+| Voltage Z - D            | 44      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Voltage Z -> y=kx+d            |
+| Internal Temperature - K | 48      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Internal Temperature -> y=kx+d |
+| Internal Temperature - D | 52      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Internal Temperature -> y=kx+d |
+| Temperature Y - K        | 56      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Y -> y=kx+d        |
+| Temperature Y - D        | 60      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Y -> y=kx+d        |
+| Temperature Z - K        | 66      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Z -> y=kx+d        |
+| Temperature Z - D        | 70      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Z -> y=kx+d        |
