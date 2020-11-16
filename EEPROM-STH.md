@@ -93,5 +93,5 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | Internal Temperature - D | 52      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Internal Temperature -> y=kx+d |
 | Temperature Y - K        | 56      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Y -> y=kx+d        |
 | Temperature Y - D        | 60      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Y -> y=kx+d        |
-| Temperature Z - K        | 66      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Z -> y=kx+d        |
-| Temperature Z - D        | 70      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Z -> y=kx+d        |
+| Temperature Z - K        | 64      | 4      | False     | 1.0                    | Float  | Calibration Factor K for Temperature Z -> y=kx+d        |
+| Temperature Z - D        | 68      | 4      | False     | 0.0                    | Float  | Calibration Factor d for Temperature Z -> y=kx+d        |
