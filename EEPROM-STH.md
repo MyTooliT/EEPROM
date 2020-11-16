@@ -67,9 +67,10 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | [Production Date: Year](#value:production-date)  | 20      | 4      | False     | -     | -    | ASCII    |
 | [Production Date: Month](#value:production-date) | 24      | 2      | False     | -     | -    | ASCII    |
 | [Production Date: Day](#value:production-date)   | 26      | 2      | False     | -     | -    | ASCII    |
-| Batch Number                                     | 28      | 4      | True      | 112   | -    | Unsigned |
+| [Batch Number](#value:batch-number)              | 28      | 4      | True      | -     | -    | Unsigned |
 
 - <a name="value:production-date">**Production Date**:</a> This date depends on the production date of the STH (printed on the PCB). It can be changed in the [configuration of ICOc][config].
+- <a name="value:batch-number">**Batch Number**:</a> This value can be changed in the [configuration of ICOc][config].
 
 <a name="page:calibration"></a>
 
