@@ -39,7 +39,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | Firmware Version: Build  | 23      | 1      | False     | -     | Unsigned | [Build Firmware Version Number](#software-version)   |
 | Release Name             | 24      | 8      | False     | Tanja | UTF-8    |                                                      |
 | Serial Number            | 32      | 32     | True      | 0     | UTF-8    |                                                      |
-| Name                     | 64      | 128    | True      | 0     | UTF-8    |                                                      |
+| Manufacture Name         | 64      | 128    | True      | 0     | UTF-8    |                                                      |
 | OEM Free Use             | 192     | 64     | True      | 0     | -        |                                                      |
 
 #### Version Numbers
