@@ -50,11 +50,11 @@
 | 8    | 5      | Hardware Revision: Reserved               |                                      | –        |
 | 13   | 1      | Hardware Revision: Major                  |                                      | Unsigned |
 | 14   | 1      | Hardware Revision: Minor                  |                                      | Unsigned |
-| 15   | 1      | Hardware Revision: Build                  |                                      | Unsigned |
+| 15   | 1      | Hardware Revision: Patch                  |                                      | Unsigned |
 | 16   | 5      | Firmware Version: Reserved                |                                      | –        |
 | 21   | 1      | Firmware Version: Major                   |                                      | Unsigned |
 | 22   | 1      | Firmware Version: Minor                   |                                      | Unsigned |
-| 23   | 1      | Firmware Version: Build                   |                                      | Unsigned |
+| 23   | 1      | Firmware Version: Patch                   |                                      | Unsigned |
 | 24   | 8      | [Release Name](#value:release-name)       |                                      | UTF-8    |
 | 32   | 32     | [Serial Number](#value:serial-number)     |                                      | UTF-8    |
 | 64   | 128    | [Product Name](#value:product-name)       |                                      | UTF-8    |
@@ -62,10 +62,10 @@
 
 ##### Version Numbers
 
-- Version numbers will look like this `Major.Minor.Build` (e.g. `1.2.3`)
+- Version numbers will look like this `Major.Minor.Patch` (e.g. `1.2.3`)
 - Major specifies the first digit of the version number (usually only increased for “breaking” changes)
 - Minor specifies the second digit of the version number (usually only increased for “minor” changes)
-- Build specifies the third digit of the version number (usually increased for “bug fixes”)
+- Patch specifies the third digit of the version number (usually increased for “bug fixes”)
 
 <a name="value:release-name"></a>
 

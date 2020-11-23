@@ -37,10 +37,10 @@ All of the values of the system configuration are set to default values on reset
 | GTIN                                                 | 0       | 8      | True      | 0     | Unsigned |
 | [Hardware Revision: Major](#value:hardware-revision) | 13      | 1      | False     | -     | Unsigned |
 | [Hardware Revision: Minor](#value:hardware-revision) | 14      | 1      | False     | -     | Unsigned |
-| [Hardware Revision: Build](#value:hardware-revision) | 15      | 1      | False     | -     | Unsigned |
+| [Hardware Revision: Patch](#value:hardware-revision) | 15      | 1      | False     | -     | Unsigned |
 | [Firmware Version: Major](#value:firmware-version)   | 21      | 1      | False     | -     | Unsigned |
 | [Firmware Version: Minor](#value:firmware-version)   | 22      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Build](#value:firmware-version)   | 23      | 1      | False     | -     | Unsigned |
+| [Firmware Version: Patch](#value:firmware-version)   | 23      | 1      | False     | -     | Unsigned |
 | [Release Name](#value:release-name)                  | 24      | 8      | False     | Tanja | UTF-8    |
 | [Serial Number](#value:serial-number)                | 32      | 32     | True      | 0     | UTF-8    |
 | [Product Name](#value:product-name)                  | 64      | 128    | True      | 0     | UTF-8    |
