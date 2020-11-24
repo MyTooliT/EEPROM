@@ -54,14 +54,17 @@ All of the values of the system configuration are set to the default values abov
 
 ### Page `Statistic`
 
-| Name                   | Address | Length | Read Only | Value | Unit | Format   |
-| ---------------------- | ------- | ------ | --------- | ----- | ---- | -------- |
-| Power On Cycles        | 0       | 4      | True      | 0     | -    | Unsigned |
-| Power Off Cycles       | 4       | 4      | True      | 0     | -    | Unsigned |
-| Operating Time         | 8       | 4      | True      | 0     | s    | Unsigned |
-| Under Voltage Counter  | 12      | 4      | True      | 0     | -    | Unsigned |
-| Watchdog Reset Counter | 16      | 4      | True      | 0     | -    | Unsigned |
-| Production Date: Year  | 20      | 4      | True      | -     |      | ASCII    |
-| Production Date: Month | 24      | 2      | True      | -     |      | ASCII    |
-| Production Date: Day   | 26      | 2      | True      | -     |      | ASCII    |
-| Batch Number           | 28      | 4      | True      | 2     | -    | Unsigned |
+| Name                                             | Address | Length | Read Only | Value | Unit | Format   |
+| ------------------------------------------------ | ------- | ------ | --------- | ----- | ---- | -------- |
+| Power On Cycles                                  | 0       | 4      | True      | 0     | -    | Unsigned |
+| Power Off Cycles                                 | 4       | 4      | True      | 0     | -    | Unsigned |
+| Operating Time                                   | 8       | 4      | True      | 0     | s    | Unsigned |
+| Under Voltage Counter                            | 12      | 4      | True      | 0     | -    | Unsigned |
+| Watchdog Reset Counter                           | 16      | 4      | True      | 0     | -    | Unsigned |
+| [Production Date: Year](#value:production-date)  | 20      | 4      | True      | -     | -    | ASCII    |
+| [Production Date: Month](#value:production-date) | 24      | 2      | True      | -     | -    | ASCII    |
+| [Production Date: Day](#value:production-date)   | 26      | 2      | True      | -     | -    | ASCII    |
+| [Batch Number](#value:batch-number)              | 28      | 4      | True      | -     | -    | Unsigned |
+
+- <a name="value:production-date">**Production Date**:</a> This date depends on the production date of the STU. It can be changed in the [configuration of ICOc][config].
+- <a name="value:batch-number">**Batch Number**:</a> This value can be changed in the [configuration of ICOc][config].
