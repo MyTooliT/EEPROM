@@ -4,10 +4,22 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 
 ## Used Pages
 
-| Page Number | Page Name                          |
-| ----------- | ---------------------------------- |
-| `0x4`       | [Product Data](#page:product-data) |
-| `0x5`       | [Statistic](#page:statistic)       |
+| Page Number | Page Name                                          |
+| ----------- | -------------------------------------------------- |
+| `0x0`       | [System Configuration](#page:system-configuration) |
+| `0x4`       | [Product Data](#page:product-data)                 |
+| `0x5`       | [Statistic](#page:statistic)                       |
+
+### Page `System Configuration`
+
+| Name          | Address | Length | Read Only | Value                 | Comment                      | Unit | Format |
+| ------------- | ------- | ------ | --------- | --------------------- | ---------------------------- | ---- | ------ |
+| EEPROM Status | 0       | 1      | True      | `0xac`                | Value for initialized EEPROM | -    |        |
+| STH Name      | 1       | 8      | False     | Firmware version name | e.g. `Valerie`               | -    | UTF-8  |
+
+#### Initialization
+
+All of the values of the system configuration are set to the default values above on reset of the STU, if the EEPROM status (byte) is **not** set to `Initialized` (`0xac`) or `Locked` (`0xca`). The values for the sleep times and advertisement times are set (to the same values the STH uses) on initialization too. However, since the STU is not battery-powered these timing values are probably not relevant.
 
 <a name="page:product-data"></a>
 
