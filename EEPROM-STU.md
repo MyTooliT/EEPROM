@@ -25,25 +25,30 @@ All of the values of the system configuration are set to the default values abov
 
 ### Page `Product Data`
 
-| Name                                               | Address | Length | Read Only | Value                                            | Format   |
-| -------------------------------------------------- | ------- | ------ | --------- | ------------------------------------------------ | -------- |
-| GTIN                                               | 0       | 8      | True      | 0                                                | Unsigned |
-| Hardware Revision: Reserved                        | 8       | 5      | True      | 0                                                | Unsigned |
-| Hardware Revision: Major                           | 13      | 1      | True      | 1                                                | Unsigned |
-| Hardware Revision: Minor                           | 14      | 1      | True      | 3                                                | Unsigned |
-| Hardware Revision: Patch                           | 15      | 1      | True      | 1                                                | Unsigned |
-| Firmware Version: Reserved                         | 16      | 5      | True      | 0                                                | Unsigned |
-| [Firmware Version: Major](#value:firmware-version) | 21      | 1      | True      | -                                                | Unsigned |
-| [Firmware Version: Minor](#value:firmware-version) | 22      | 1      | True      | -                                                | Unsigned |
-| [Firmware Version: Patch](#value:firmware-version) | 23      | 1      | True      | -                                                | Unsigned |
-| Release Name                                       | 24      | 8      | True      | Valerie                                          | UTF-8    |
-| Serial Number                                      | 32      | 32     | True      | MyToolItStu001-1-00001-001-2                     | UTF-8    |
-| Product Name                                       | 64      | 128    | True      | Digital and Analog Communication with 5V -Supply | UTF-8    |
-| OEM Free Use                                       | 192     | 64     | True      | 0                                                | -        |
+| Name                                                 | Address | Length | Read Only | Value   | Format   |
+| ---------------------------------------------------- | ------- | ------ | --------- | ------- | -------- |
+| GTIN                                                 | 0       | 8      | True      | 0       | Unsigned |
+| [Hardware Revision: Major](#value:hardware-revision) | 13      | 1      | True      | -       | Unsigned |
+| [Hardware Revision: Minor](#value:hardware-revision) | 14      | 1      | True      | -       | Unsigned |
+| [Hardware Revision: Patch](#value:hardware-revision) | 15      | 1      | True      | -       | Unsigned |
+| [Firmware Version: Major](#value:firmware-version)   | 21      | 1      | True      | -       | Unsigned |
+| [Firmware Version: Minor](#value:firmware-version)   | 22      | 1      | True      | -       | Unsigned |
+| [Firmware Version: Patch](#value:firmware-version)   | 23      | 1      | True      | -       | Unsigned |
+| [Release Name](#value:release-name)                  | 24      | 8      | True      | Valerie | UTF-8    |
+| [Serial Number](#value:serial-number)                | 32      | 32     | True      | 0       | UTF-8    |
+| [Product Name](#value:product-name)                  | 64      | 128    | True      | 0       | UTF-8    |
+| [OEM Free Use](#value:oem-free-use)                  | 192     | 64     | True      | 0       | -        |
 
 #### Version Numbers
 
-- <a name="value:firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STU/releases)
+- <a name="value:hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
+- <a name="value:firmware-version"></a> **Firmware Version**: This number depends on the current [STU software version](https://github.com/MyTooliT/STU/releases)
+- <a name="value:release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:serial-number"></a> **Serial Number**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:product-name"></a> **Product Name**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:oem-free-use"></a> **OEM Free Use**: This value can be changed in the [configuration of ICOc][config].
+
+[config]: https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml
 
 <a name="page:statistic"></a>
 
