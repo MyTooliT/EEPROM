@@ -8,7 +8,7 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 | ----------- | -------------------------------------------------- |
 | `0x0`       | [System Configuration](#page:system-configuration) |
 | `0x4`       | [Product Data](#page:product-data)                 |
-| `0x5`       | [Statistic](#page:statistic)                       |
+| `0x5`       | [Statistics](#page:statistics)                     |
 
 ### Page `System Configuration`
 
@@ -50,9 +50,9 @@ All of the values of the system configuration are set to the default values abov
 
 [config]: https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml
 
-<a name="page:statistic"></a>
+<a name="page:statistics"></a>
 
-### Page `Statistic`
+### Page `Statistics`
 
 | Name                                             | Address | Length | Read Only | Value | Unit | Format   |
 | ------------------------------------------------ | ------- | ------ | --------- | ----- | ---- | -------- |

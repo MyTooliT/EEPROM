@@ -15,7 +15,7 @@
 | ----------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | 0           | [System Configuration](#page:system-configuration) | Store system specific data e.g. Bluetooth name and advertisement time                               |
 | 4           | [Product Data](#page:product-data)                 | Store product data e.g. serial number                                                               |
-| 5           | [Statistic](#page:statistic)                       | Store statistic data e.g. power on/off cycles                                                       |
+| 5           | [Statistics](#page:statistics)                     | Store statistic data e.g. power on/off cycles                                                       |
 | 8           | [Calibration](#page:calibration)                   | Store configuration data like slope (`k`) and offset (`d`) values to derive SI value from ADC value |
 
 <a name="page:system-configuration"></a>
@@ -101,9 +101,9 @@ This text specifies the code name of the STH/STU software release
 - Manufacture specific information
 - Format is free to choose
 
-<a name="page:statistic"></a>
+<a name="page:statistics"></a>
 
-#### Page `Statistic`
+#### Page `Statistics`
 
 | Byte | Length | Name                                                  | Comment                                     | Format   | Unit |
 | ---- | ------ | ----------------------------------------------------- | ------------------------------------------- | -------- | ---- |

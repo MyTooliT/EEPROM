@@ -8,7 +8,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | ----------- | -------------------------------------------------- |
 | `0x0`       | [System Configuration](#page:system-configuration) |
 | `0x4`       | [Product Data](#page:product-data)                 |
-| `0x5`       | [Statistic](#page:statistic)                       |
+| `0x5`       | [Statistics](#page:statistics)                     |
 | `0x8`       | [Calibration](#page:calibration)                   |
 
 <a name="page:system-configuration"></a>
@@ -57,9 +57,9 @@ All of the values of the system configuration are set to default values on reset
 
 [config]: https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml
 
-<a name="page:statistic"></a>
+<a name="page:statistics"></a>
 
-### Page `Statistic`
+### Page `Statistics`
 
 | Name                                             | Address | Length | Read Only | Value | Unit | Format   |
 | ------------------------------------------------ | ------- | ------ | --------- | ----- | ---- | -------- |
