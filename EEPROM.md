@@ -33,7 +33,9 @@
 
 ##### Sleep & Advertisement Times
 
-![STH States](https://raw.githubusercontent.com/MyTooliT/Diagrams/master/Pictures/STH%20States.svg)
+```{r, fig.align="center", out.width="80%", echo=FALSE}
+knitr::include_graphics("Pictures/STH States.svg", auto_pdf = TRUE)
+```
 
 - `Sleep Time 1`: Time to switch from the `Disconnected` state to `Sleep Mode 1` (low power usage)
 - `Sleep Time 2`: Time switch from the `Sleep Mode 1` state to `Sleep Mode 2` (very low power usage)
