@@ -33,7 +33,7 @@
 
 ##### Sleep & Advertisement Times
 
-![STH States](https://raw.githubusercontent.com/MyTooliT/Diagrams/master/Graphs/STH%20States.svg)
+![STH States](https://raw.githubusercontent.com/MyTooliT/Diagrams/master/Pictures/STH%20States.svg)
 
 - `Sleep Time 1`: Time to switch from the `Disconnected` state to `Sleep Mode 1` (low power usage)
 - `Sleep Time 2`: Time switch from the `Sleep Mode 1` state to `Sleep Mode 2` (very low power usage)
