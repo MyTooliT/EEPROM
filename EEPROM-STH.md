@@ -5,24 +5,24 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 ## Used Pages
 
 | Page Number | Page Name                                          |
-| ----------- | -------------------------------------------------- |
-| `0x0`       | [System Configuration](#page:system-configuration) |
-| `0x4`       | [Product Data](#page:product-data)                 |
-| `0x5`       | [Statistics](#page:statistics)                     |
-| `0x8`       | [Calibration](#page:calibration)                   |
+| ----------: | -------------------------------------------------- |
+|       `0x0` | [System Configuration](#page:system-configuration) |
+|       `0x4` | [Product Data](#page:product-data)                 |
+|       `0x5` | [Statistics](#page:statistics)                     |
+|       `0x8` | [Calibration](#page:calibration)                   |
 
 <a name="page:system-configuration"></a>
 
 ### Page `System Configuration`
 
 | Name                 | Address | Length | Read Only | Value                                                                                                                                | Comment                                        | Unit | Format   |
-| -------------------- | ------- | ------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---- | -------- |
-| EEPROM Status        | 0       | 1      | True      | `0xac`                                                                                                                               | Value for initialized EEPROM                   | -    |          |
-| STH Name             | 1       | 8      | False     | [Base64 encoded Bluetooth MAC address](https://github.com/MyTooliT/ICOc/tree/master/Scripts#mac-address-conversion) or firmware name | e.g. `CGvXAd6B` (`08:6b:d7:01:de:81`), `Tanja` | -    | UTF-8    |
-| Sleep Time 1         | 9       | 4      | False     | 300000                                                                                                                               | 5 minutes                                      | ms   | Unsigned |
-| Advertisement Time 1 | 13      | 2      | False     | 2000                                                                                                                                 | 2 seconds                                      | ms   | Unsigned |
-| Sleep Time 2         | 15      | 4      | False     | 259200000                                                                                                                            | 3 days                                         | ms   | Unsigned |
-| Advertisement Time 2 | 19      | 2      | False     | 4000                                                                                                                                 | 4 seconds                                      | ms   | Unsigned |
+| -------------------- | ------: | -----: | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---- | -------- |
+| EEPROM Status        |       0 |      1 | True      | `0xac`                                                                                                                               | Value for initialized EEPROM                   | -    |          |
+| STH Name             |       1 |      8 | False     | [Base64 encoded Bluetooth MAC address](https://github.com/MyTooliT/ICOc/tree/master/Scripts#mac-address-conversion) or firmware name | e.g. `CGvXAd6B` (`08:6b:d7:01:de:81`), `Tanja` | -    | UTF-8    |
+| Sleep Time 1         |       9 |      4 | False     | 300000                                                                                                                               | 5 minutes                                      | ms   | Unsigned |
+| Advertisement Time 1 |      13 |      2 | False     | 2000                                                                                                                                 | 2 seconds                                      | ms   | Unsigned |
+| Sleep Time 2         |      15 |      4 | False     | 259200000                                                                                                                            | 3 days                                         | ms   | Unsigned |
+| Advertisement Time 2 |      19 |      2 | False     | 4000                                                                                                                                 | 4 seconds                                      | ms   | Unsigned |
 
 #### Initialization
 
@@ -33,18 +33,18 @@ All of the values of the system configuration are set to default values on reset
 ### Page `Product Data`
 
 | Name                                                 | Address | Length | Read Only | Value | Format   |
-| ---------------------------------------------------- | ------- | ------ | --------- | ----- | -------- |
-| GTIN                                                 | 0       | 8      | True      | 0     | Unsigned |
-| [Hardware Revision: Major](#value:hardware-revision) | 13      | 1      | False     | -     | Unsigned |
-| [Hardware Revision: Minor](#value:hardware-revision) | 14      | 1      | False     | -     | Unsigned |
-| [Hardware Revision: Patch](#value:hardware-revision) | 15      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Major](#value:firmware-version)   | 21      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Minor](#value:firmware-version)   | 22      | 1      | False     | -     | Unsigned |
-| [Firmware Version: Patch](#value:firmware-version)   | 23      | 1      | False     | -     | Unsigned |
-| [Release Name](#value:release-name)                  | 24      | 8      | False     | Tanja | UTF-8    |
-| [Serial Number](#value:serial-number)                | 32      | 32     | True      | 0     | UTF-8    |
-| [Product Name](#value:product-name)                  | 64      | 128    | True      | 0     | UTF-8    |
-| [OEM Free Use](#value:oem-free-use)                  | 192     | 64     | True      | 0     | -        |
+| ---------------------------------------------------- | ------: | -----: | --------- | ----- | -------- |
+| GTIN                                                 |       0 |      8 | True      | 0     | Unsigned |
+| [Hardware Revision: Major](#value:hardware-revision) |      13 |      1 | False     | -     | Unsigned |
+| [Hardware Revision: Minor](#value:hardware-revision) |      14 |      1 | False     | -     | Unsigned |
+| [Hardware Revision: Patch](#value:hardware-revision) |      15 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Major](#value:firmware-version)   |      21 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Minor](#value:firmware-version)   |      22 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Patch](#value:firmware-version)   |      23 |      1 | False     | -     | Unsigned |
+| [Release Name](#value:release-name)                  |      24 |      8 | False     | Tanja | UTF-8    |
+| [Serial Number](#value:serial-number)                |      32 |     32 | True      | 0     | UTF-8    |
+| [Product Name](#value:product-name)                  |      64 |    128 | True      | 0     | UTF-8    |
+| [OEM Free Use](#value:oem-free-use)                  |     192 |     64 | True      | 0     | -        |
 
 #### Version Numbers
 
@@ -62,16 +62,16 @@ All of the values of the system configuration are set to default values on reset
 ### Page `Statistics`
 
 | Name                                             | Address | Length | Read Only | Value | Unit | Format   |
-| ------------------------------------------------ | ------- | ------ | --------- | ----- | ---- | -------- |
-| Power On Cycles                                  | 0       | 4      | True      | 0     | -    | Unsigned |
-| Power Off Cycles                                 | 4       | 4      | True      | 0     | -    | Unsigned |
-| Operating Time                                   | 8       | 4      | True      | 0     | s    | Unsigned |
-| Under Voltage Counter                            | 12      | 4      | True      | 0     | -    | Unsigned |
-| Watchdog Reset Counter                           | 16      | 4      | True      | 0     | -    | Unsigned |
-| [Production Date: Year](#value:production-date)  | 20      | 4      | False     | -     | -    | ASCII    |
-| [Production Date: Month](#value:production-date) | 24      | 2      | False     | -     | -    | ASCII    |
-| [Production Date: Day](#value:production-date)   | 26      | 2      | False     | -     | -    | ASCII    |
-| [Batch Number](#value:batch-number)              | 28      | 4      | True      | -     | -    | Unsigned |
+| ------------------------------------------------ | ------: | -----: | --------- | ----: | ---- | -------- |
+| Power On Cycles                                  |       0 |      4 | True      |     0 | -    | Unsigned |
+| Power Off Cycles                                 |       4 |      4 | True      |     0 | -    | Unsigned |
+| Operating Time                                   |       8 |      4 | True      |     0 | s    | Unsigned |
+| Under Voltage Counter                            |      12 |      4 | True      |     0 | -    | Unsigned |
+| Watchdog Reset Counter                           |      16 |      4 | True      |     0 | -    | Unsigned |
+| [Production Date: Year](#value:production-date)  |      20 |      4 | False     |     - | -    | ASCII    |
+| [Production Date: Month](#value:production-date) |      24 |      2 | False     |     - | -    | ASCII    |
+| [Production Date: Day](#value:production-date)   |      26 |      2 | False     |     - | -    | ASCII    |
+| [Batch Number](#value:batch-number)              |      28 |      4 | True      |     - | -    | Unsigned |
 
 - <a name="value:production-date">**Production Date**:</a> This date depends on the production date of the STH (printed on the PCB). It can be changed in the [configuration of ICOc][config].
 - <a name="value:batch-number">**Batch Number**:</a> This value can be changed in the [configuration of ICOc][config].
@@ -81,9 +81,9 @@ All of the values of the system configuration are set to default values on reset
 ### Page `Calibration`
 
 | Name                                                   | Address | Length | Read Only | Value | Format |
-| ------------------------------------------------------ | ------- | ------ | --------- | ----- | ------ |
-| [Acceleration X: Slope](#value:acceleration-x-slope)   | 0       | 4      | False     | -     | Float  |
-| [Acceleration X: Offset](#value:acceleration-x-offset) | 4       | 4      | False     | -     | Float  |
+| ------------------------------------------------------ | ------: | -----: | --------- | ----- | ------ |
+| [Acceleration X: Slope](#value:acceleration-x-slope)   |       0 |      4 | False     | -     | Float  |
+| [Acceleration X: Offset](#value:acceleration-x-offset) |       4 |      4 | False     | -     | Float  |
 
 #### Acceleration
 

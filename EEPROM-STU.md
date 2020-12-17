@@ -5,17 +5,17 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 ## Used Pages
 
 | Page Number | Page Name                                          |
-| ----------- | -------------------------------------------------- |
-| `0x0`       | [System Configuration](#page:system-configuration) |
-| `0x4`       | [Product Data](#page:product-data)                 |
-| `0x5`       | [Statistics](#page:statistics)                     |
+| ----------: | -------------------------------------------------- |
+|       `0x0` | [System Configuration](#page:system-configuration) |
+|       `0x4` | [Product Data](#page:product-data)                 |
+|       `0x5` | [Statistics](#page:statistics)                     |
 
 ### Page `System Configuration`
 
 | Name          | Address | Length | Read Only | Value                 | Comment                      | Unit | Format |
-| ------------- | ------- | ------ | --------- | --------------------- | ---------------------------- | ---- | ------ |
-| EEPROM Status | 0       | 1      | True      | `0xac`                | Value for initialized EEPROM | -    |        |
-| STH Name      | 1       | 8      | False     | Firmware version name | e.g. `Valerie`               | -    | UTF-8  |
+| ------------- | ------: | -----: | --------- | --------------------- | ---------------------------- | ---- | ------ |
+| EEPROM Status |       0 |      1 | True      | `0xac`                | Value for initialized EEPROM | -    |        |
+| STH Name      |       1 |      8 | False     | Firmware version name | e.g. `Valerie`               | -    | UTF-8  |
 
 #### Initialization
 
@@ -26,18 +26,18 @@ All of the values of the system configuration are set to the default values abov
 ### Page `Product Data`
 
 | Name                                                 | Address | Length | Read Only | Value   | Format   |
-| ---------------------------------------------------- | ------- | ------ | --------- | ------- | -------- |
-| GTIN                                                 | 0       | 8      | True      | 0       | Unsigned |
-| [Hardware Revision: Major](#value:hardware-revision) | 13      | 1      | True      | -       | Unsigned |
-| [Hardware Revision: Minor](#value:hardware-revision) | 14      | 1      | True      | -       | Unsigned |
-| [Hardware Revision: Patch](#value:hardware-revision) | 15      | 1      | True      | -       | Unsigned |
-| [Firmware Version: Major](#value:firmware-version)   | 21      | 1      | True      | -       | Unsigned |
-| [Firmware Version: Minor](#value:firmware-version)   | 22      | 1      | True      | -       | Unsigned |
-| [Firmware Version: Patch](#value:firmware-version)   | 23      | 1      | True      | -       | Unsigned |
-| [Release Name](#value:release-name)                  | 24      | 8      | True      | Valerie | UTF-8    |
-| [Serial Number](#value:serial-number)                | 32      | 32     | True      | 0       | UTF-8    |
-| [Product Name](#value:product-name)                  | 64      | 128    | True      | 0       | UTF-8    |
-| [OEM Free Use](#value:oem-free-use)                  | 192     | 64     | True      | 0       | -        |
+| ---------------------------------------------------- | ------: | -----: | --------- | ------- | -------- |
+| GTIN                                                 |       0 |      8 | True      | 0       | Unsigned |
+| [Hardware Revision: Major](#value:hardware-revision) |      13 |      1 | True      | -       | Unsigned |
+| [Hardware Revision: Minor](#value:hardware-revision) |      14 |      1 | True      | -       | Unsigned |
+| [Hardware Revision: Patch](#value:hardware-revision) |      15 |      1 | True      | -       | Unsigned |
+| [Firmware Version: Major](#value:firmware-version)   |      21 |      1 | True      | -       | Unsigned |
+| [Firmware Version: Minor](#value:firmware-version)   |      22 |      1 | True      | -       | Unsigned |
+| [Firmware Version: Patch](#value:firmware-version)   |      23 |      1 | True      | -       | Unsigned |
+| [Release Name](#value:release-name)                  |      24 |      8 | True      | Valerie | UTF-8    |
+| [Serial Number](#value:serial-number)                |      32 |     32 | True      | 0       | UTF-8    |
+| [Product Name](#value:product-name)                  |      64 |    128 | True      | 0       | UTF-8    |
+| [OEM Free Use](#value:oem-free-use)                  |     192 |     64 | True      | 0       | -        |
 
 #### Version Numbers
 
@@ -55,16 +55,16 @@ All of the values of the system configuration are set to the default values abov
 ### Page `Statistics`
 
 | Name                                             | Address | Length | Read Only | Value | Unit | Format   |
-| ------------------------------------------------ | ------- | ------ | --------- | ----- | ---- | -------- |
-| Power On Cycles                                  | 0       | 4      | True      | 0     | -    | Unsigned |
-| Power Off Cycles                                 | 4       | 4      | True      | 0     | -    | Unsigned |
-| Operating Time                                   | 8       | 4      | True      | 0     | s    | Unsigned |
-| Under Voltage Counter                            | 12      | 4      | True      | 0     | -    | Unsigned |
-| Watchdog Reset Counter                           | 16      | 4      | True      | 0     | -    | Unsigned |
-| [Production Date: Year](#value:production-date)  | 20      | 4      | True      | -     | -    | ASCII    |
-| [Production Date: Month](#value:production-date) | 24      | 2      | True      | -     | -    | ASCII    |
-| [Production Date: Day](#value:production-date)   | 26      | 2      | True      | -     | -    | ASCII    |
-| [Batch Number](#value:batch-number)              | 28      | 4      | True      | -     | -    | Unsigned |
+| ------------------------------------------------ | ------: | -----: | --------- | ----: | ---- | -------- |
+| Power On Cycles                                  |       0 |      4 | True      |     0 | -    | Unsigned |
+| Power Off Cycles                                 |       4 |      4 | True      |     0 | -    | Unsigned |
+| Operating Time                                   |       8 |      4 | True      |     0 | s    | Unsigned |
+| Under Voltage Counter                            |      12 |      4 | True      |     0 | -    | Unsigned |
+| Watchdog Reset Counter                           |      16 |      4 | True      |     0 | -    | Unsigned |
+| [Production Date: Year](#value:production-date)  |      20 |      4 | True      |     - | -    | ASCII    |
+| [Production Date: Month](#value:production-date) |      24 |      2 | True      |     - | -    | ASCII    |
+| [Production Date: Day](#value:production-date)   |      26 |      2 | True      |     - | -    | ASCII    |
+| [Batch Number](#value:batch-number)              |      28 |      4 | True      |     - | -    | Unsigned |
 
 - <a name="value:production-date">**Production Date**:</a> This date depends on the production date of the STU. It can be changed in the [configuration of ICOc][config].
 - <a name="value:batch-number">**Batch Number**:</a> This value can be changed in the [configuration of ICOc][config].
