@@ -15,7 +15,7 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 | Name          | Address | Length | Read Only | Value                 | Comment                      | Unit | Format |
 | ------------- | ------: | -----: | --------- | --------------------- | ---------------------------- | ---- | ------ |
 | EEPROM Status |       0 |      1 | True      | `0xac`                | Value for initialized EEPROM | -    |        |
-| STH Name      |       1 |      8 | False     | Firmware version name | e.g. `Valerie`               | -    | UTF-8  |
+| STU Name      |       1 |      8 | False     | Firmware version name | e.g. `Valerie`               | -    | UTF-8  |
 
 #### Initialization
 
