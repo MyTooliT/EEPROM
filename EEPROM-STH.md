@@ -15,14 +15,14 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ### Page `System Configuration`
 
-| Name                 | Address | Length | Read Only | Value                                                                                                                                | Comment                                        | Unit | Format   |
-| -------------------- | ------: | -----: | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---- | -------- |
-| EEPROM Status        |       0 |      1 | True      | `0xac`                                                                                                                               | Value for initialized EEPROM                   | -    |          |
-| STH Name             |       1 |      8 | False     | [Base64 encoded Bluetooth MAC address](https://github.com/MyTooliT/ICOc/tree/master/Scripts#mac-address-conversion) or firmware name | e.g. `CGvXAd6B` (`08:6b:d7:01:de:81`), `Tanja` | -    | UTF-8    |
-| Sleep Time 1         |       9 |      4 | False     | 300000                                                                                                                               | 5 minutes                                      | ms   | Unsigned |
-| Advertisement Time 1 |      13 |      2 | False     | 2000                                                                                                                                 | 2 seconds                                      | ms   | Unsigned |
-| Sleep Time 2         |      15 |      4 | False     | 259200000                                                                                                                            | 3 days                                         | ms   | Unsigned |
-| Advertisement Time 2 |      19 |      2 | False     | 4000                                                                                                                                 | 4 seconds                                      | ms   | Unsigned |
+| Name                 | Address | Length | Read Only | Value                                                                                                                                | Comment                      | Unit | Format   |
+| -------------------- | ------: | -----: | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- | ---- | -------- |
+| EEPROM Status        |       0 |      1 | True      | `0xac`                                                                                                                               | Value for initialized EEPROM | -    |          |
+| STH Name             |       1 |      8 | False     | [Base64 encoded Bluetooth MAC address](https://github.com/MyTooliT/ICOc/tree/master/Scripts#mac-address-conversion) or firmware name | e.g. `CGvXAd6B`, `Tanja`     | -    | UTF-8    |
+| Sleep Time 1         |       9 |      4 | False     | 300000                                                                                                                               | 5 minutes                    | ms   | Unsigned |
+| Advertisement Time 1 |      13 |      2 | False     | 2000                                                                                                                                 | 2 seconds                    | ms   | Unsigned |
+| Sleep Time 2         |      15 |      4 | False     | 259200000                                                                                                                            | 3 days                       | ms   | Unsigned |
+| Advertisement Time 2 |      19 |      2 | False     | 4000                                                                                                                                 | 4 seconds                    | ms   | Unsigned |
 
 #### Initialization
 
