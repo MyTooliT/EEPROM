@@ -10,6 +10,8 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 |       `0x4` | [Product Data](#page:stu-product-data)                 |
 |       `0x5` | [Statistics](#page:stu-statistics)                     |
 
+<a name="page:stu-system-configuration"></a>
+
 ### Page `System Configuration`
 
 | Name          | Address | Length | Read Only | Value                 | Comment                      | Unit | Format |
