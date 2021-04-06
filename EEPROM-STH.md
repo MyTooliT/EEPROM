@@ -4,14 +4,14 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 ## Used Pages
 
-| Page Number | Page Name                                          |
-| ----------: | -------------------------------------------------- |
-|       `0x0` | [System Configuration](#page:system-configuration) |
-|       `0x4` | [Product Data](#page:product-data)                 |
-|       `0x5` | [Statistics](#page:statistics)                     |
-|       `0x8` | [Calibration](#page:calibration)                   |
+| Page Number | Page Name                                              |
+| ----------: | ------------------------------------------------------ |
+|       `0x0` | [System Configuration](#page:sth-system-configuration) |
+|       `0x4` | [Product Data](#page:sth-product-data)                 |
+|       `0x5` | [Statistics](#page:sth-statistics)                     |
+|       `0x8` | [Calibration](#page:sth-calibration)                   |
 
-<a name="page:system-configuration"></a>
+<a name="page:sth-system-configuration"></a>
 
 ### Page `System Configuration`
 
@@ -28,55 +28,55 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 All of the values of the system configuration are set to default values on reset of the STH, if the EEPROM status (byte) is **not** set to `Initialized` (`0xac`) or `Locked` (`0xca`). The default values are described above. The name is set to the firmware version name (`Tanja`) and does not use the Base64 encoded Bluetooth MAC address.
 
-<a name="page:product-data"></a>
+<a name="page:sth-product-data"></a>
 
 ### Page `Product Data`
 
-| Name                                                 | Address | Length | Read Only | Value | Format   |
-| ---------------------------------------------------- | ------: | -----: | --------- | ----- | -------- |
-| GTIN                                                 |       0 |      8 | True      | 0     | Unsigned |
-| [Hardware Revision: Major](#value:hardware-revision) |      13 |      1 | False     | -     | Unsigned |
-| [Hardware Revision: Minor](#value:hardware-revision) |      14 |      1 | False     | -     | Unsigned |
-| [Hardware Revision: Patch](#value:hardware-revision) |      15 |      1 | False     | -     | Unsigned |
-| [Firmware Version: Major](#value:firmware-version)   |      21 |      1 | False     | -     | Unsigned |
-| [Firmware Version: Minor](#value:firmware-version)   |      22 |      1 | False     | -     | Unsigned |
-| [Firmware Version: Patch](#value:firmware-version)   |      23 |      1 | False     | -     | Unsigned |
-| [Release Name](#value:release-name)                  |      24 |      8 | False     | Tanja | UTF-8    |
-| [Serial Number](#value:serial-number)                |      32 |     32 | True      | 0     | UTF-8    |
-| [Product Name](#value:product-name)                  |      64 |    128 | True      | 0     | UTF-8    |
-| [OEM Free Use](#value:oem-free-use)                  |     192 |     64 | True      | 0     | -        |
+| Name                                                     | Address | Length | Read Only | Value | Format   |
+| -------------------------------------------------------- | ------: | -----: | --------- | ----- | -------- |
+| GTIN                                                     |       0 |      8 | True      | 0     | Unsigned |
+| [Hardware Revision: Major](#value:sth-hardware-revision) |      13 |      1 | False     | -     | Unsigned |
+| [Hardware Revision: Minor](#value:sth-hardware-revision) |      14 |      1 | False     | -     | Unsigned |
+| [Hardware Revision: Patch](#value:sth-hardware-revision) |      15 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Major](#value:sth-firmware-version)   |      21 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Minor](#value:sth-firmware-version)   |      22 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Patch](#value:sth-firmware-version)   |      23 |      1 | False     | -     | Unsigned |
+| [Release Name](#value:sth-release-name)                  |      24 |      8 | False     | Tanja | UTF-8    |
+| [Serial Number](#value:sth-serial-number)                |      32 |     32 | True      | 0     | UTF-8    |
+| [Product Name](#value:sth-product-name)                  |      64 |    128 | True      | 0     | UTF-8    |
+| [OEM Free Use](#value:sth-oem-free-use)                  |     192 |     64 | True      | 0     | -        |
 
 #### Version Numbers
 
-- <a name="value:hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
-- <a name="value:firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
-- <a name="value:release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
-- <a name="value:serial-number"></a> **Serial Number**: This text can be changed in the [configuration of ICOc][config]
-- <a name="value:product-name"></a> **Product Name**: This text can be changed in the [configuration of ICOc][config]
-- <a name="value:oem-free-use"></a> **OEM Free Use**: This value can be changed in the [configuration of ICOc][config].
+- <a name="value:sth-hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
+- <a name="value:sth-firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
+- <a name="value:sth-release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:sth-serial-number"></a> **Serial Number**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:sth-product-name"></a> **Product Name**: This text can be changed in the [configuration of ICOc][config]
+- <a name="value:sth-oem-free-use"></a> **OEM Free Use**: This value can be changed in the [configuration of ICOc][config].
 
 [config]: https://github.com/MyTooliT/ICOc/blob/master/Configuration/config.yaml
 
-<a name="page:statistics"></a>
+<a name="page:sth-statistics"></a>
 
 ### Page `Statistics`
 
-| Name                                             | Address | Length | Read Only | Value | Unit | Format   |
-| ------------------------------------------------ | ------: | -----: | --------- | ----: | ---- | -------- |
-| Power On Cycles                                  |       0 |      4 | True      |     0 | -    | Unsigned |
-| Power Off Cycles                                 |       4 |      4 | True      |     0 | -    | Unsigned |
-| Operating Time                                   |       8 |      4 | True      |     0 | s    | Unsigned |
-| Under Voltage Counter                            |      12 |      4 | True      |     0 | -    | Unsigned |
-| Watchdog Reset Counter                           |      16 |      4 | True      |     0 | -    | Unsigned |
-| [Production Date: Year](#value:production-date)  |      20 |      4 | False     |     - | -    | ASCII    |
-| [Production Date: Month](#value:production-date) |      24 |      2 | False     |     - | -    | ASCII    |
-| [Production Date: Day](#value:production-date)   |      26 |      2 | False     |     - | -    | ASCII    |
-| [Batch Number](#value:batch-number)              |      28 |      4 | True      |     - | -    | Unsigned |
+| Name                                                 | Address | Length | Read Only | Value | Unit | Format   |
+| ---------------------------------------------------- | ------: | -----: | --------- | ----: | ---- | -------- |
+| Power On Cycles                                      |       0 |      4 | True      |     0 | -    | Unsigned |
+| Power Off Cycles                                     |       4 |      4 | True      |     0 | -    | Unsigned |
+| Operating Time                                       |       8 |      4 | True      |     0 | s    | Unsigned |
+| Under Voltage Counter                                |      12 |      4 | True      |     0 | -    | Unsigned |
+| Watchdog Reset Counter                               |      16 |      4 | True      |     0 | -    | Unsigned |
+| [Production Date: Year](#value:sth-production-date)  |      20 |      4 | False     |     - | -    | ASCII    |
+| [Production Date: Month](#value:sth-production-date) |      24 |      2 | False     |     - | -    | ASCII    |
+| [Production Date: Day](#value:sth-production-date)   |      26 |      2 | False     |     - | -    | ASCII    |
+| [Batch Number](#value:sth-batch-number)              |      28 |      4 | True      |     - | -    | Unsigned |
 
-- <a name="value:production-date">**Production Date**:</a> This date depends on the production date of the STH (printed on the PCB). It can be changed in the [configuration of ICOc][config].
-- <a name="value:batch-number">**Batch Number**:</a> This value can be changed in the [configuration of ICOc][config].
+- <a name="value:sth-production-date">**Production Date**:</a> This date depends on the production date of the STH (printed on the PCB). It can be changed in the [configuration of ICOc][config].
+- <a name="value:sth-batch-number">**Batch Number**:</a> This value can be changed in the [configuration of ICOc][config].
 
-<a name="page:calibration"></a>
+<a name="page:sth-calibration"></a>
 
 ### Page `Calibration`
 
