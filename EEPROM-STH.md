@@ -1,4 +1,4 @@
-# EEPROM-STH
+# STH EEPROM
 
 This file contains the default values of the STH EEPROM. For a more detailed description of the values, please take a look at the [description of the EEPROM layout](EEPROM.md).
 

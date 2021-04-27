@@ -1,4 +1,4 @@
-# EEPROM-STU
+# STU EEPROM
 
 This file contains the default values for the STU EEPROM. For a more detailed description of the values, please take a look at the [description of the EEPROM layout](EEPROM.md).
 
