@@ -32,19 +32,19 @@ All of the values of the system configuration are set to default values on reset
 
 ### Page `Product Data`
 
-| Name                                                     | Address | Length | Read Only | Value | Format   |
-| -------------------------------------------------------- | ------: | -----: | --------- | ----- | -------- |
-| GTIN                                                     |       0 |      8 | True      | 0     | Unsigned |
+| Name                                                   | Address | Length | Read Only | Value | Format   |
+| ------------------------------------------------------ | ------: | -----: | --------- | ----- | -------- |
+| GTIN                                                   |       0 |      8 | True      | 0     | Unsigned |
 | [Hardware Version: Major](#value:sth-hardware-version) |      13 |      1 | False     | -     | Unsigned |
 | [Hardware Version: Minor](#value:sth-hardware-version) |      14 |      1 | False     | -     | Unsigned |
 | [Hardware Version: Patch](#value:sth-hardware-version) |      15 |      1 | False     | -     | Unsigned |
-| [Firmware Version: Major](#value:sth-firmware-version)   |      21 |      1 | False     | -     | Unsigned |
-| [Firmware Version: Minor](#value:sth-firmware-version)   |      22 |      1 | False     | -     | Unsigned |
-| [Firmware Version: Patch](#value:sth-firmware-version)   |      23 |      1 | False     | -     | Unsigned |
-| [Release Name](#value:sth-release-name)                  |      24 |      8 | False     | Tanja | UTF-8    |
-| [Serial Number](#value:sth-serial-number)                |      32 |     32 | True      | 0     | UTF-8    |
-| [Product Name](#value:sth-product-name)                  |      64 |    128 | True      | 0     | UTF-8    |
-| [OEM Free Use](#value:sth-oem-free-use)                  |     192 |     64 | True      | 0     | -        |
+| [Firmware Version: Major](#value:sth-firmware-version) |      21 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Minor](#value:sth-firmware-version) |      22 |      1 | False     | -     | Unsigned |
+| [Firmware Version: Patch](#value:sth-firmware-version) |      23 |      1 | False     | -     | Unsigned |
+| [Release Name](#value:sth-release-name)                |      24 |      8 | False     | Tanja | UTF-8    |
+| [Serial Number](#value:sth-serial-number)              |      32 |     32 | True      | 0     | UTF-8    |
+| [Product Name](#value:sth-product-name)                |      64 |    128 | True      | 0     | UTF-8    |
+| [OEM Free Use](#value:sth-oem-free-use)                |     192 |     64 | True      | 0     | -        |
 
 #### Version Numbers
 

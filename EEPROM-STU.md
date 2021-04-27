@@ -27,19 +27,19 @@ All of the values of the system configuration are set to the default values abov
 
 ### Page `Product Data`
 
-| Name                                                     | Address | Length | Read Only | Value   | Format   |
-| -------------------------------------------------------- | ------: | -----: | --------- | ------- | -------- |
-| GTIN                                                     |       0 |      8 | True      | 0       | Unsigned |
+| Name                                                   | Address | Length | Read Only | Value   | Format   |
+| ------------------------------------------------------ | ------: | -----: | --------- | ------- | -------- |
+| GTIN                                                   |       0 |      8 | True      | 0       | Unsigned |
 | [Hardware Version: Major](#value:stu-hardware-version) |      13 |      1 | True      | -       | Unsigned |
 | [Hardware Version: Minor](#value:stu-hardware-version) |      14 |      1 | True      | -       | Unsigned |
 | [Hardware Version: Patch](#value:stu-hardware-version) |      15 |      1 | True      | -       | Unsigned |
-| [Firmware Version: Major](#value:stu-firmware-version)   |      21 |      1 | True      | -       | Unsigned |
-| [Firmware Version: Minor](#value:stu-firmware-version)   |      22 |      1 | True      | -       | Unsigned |
-| [Firmware Version: Patch](#value:stu-firmware-version)   |      23 |      1 | True      | -       | Unsigned |
-| [Release Name](#value:stu-release-name)                  |      24 |      8 | True      | Valerie | UTF-8    |
-| [Serial Number](#value:stu-serial-number)                |      32 |     32 | True      | 0       | UTF-8    |
-| [Product Name](#value:stu-product-name)                  |      64 |    128 | True      | 0       | UTF-8    |
-| [OEM Free Use](#value:stu-oem-free-use)                  |     192 |     64 | True      | 0       | -        |
+| [Firmware Version: Major](#value:stu-firmware-version) |      21 |      1 | True      | -       | Unsigned |
+| [Firmware Version: Minor](#value:stu-firmware-version) |      22 |      1 | True      | -       | Unsigned |
+| [Firmware Version: Patch](#value:stu-firmware-version) |      23 |      1 | True      | -       | Unsigned |
+| [Release Name](#value:stu-release-name)                |      24 |      8 | True      | Valerie | UTF-8    |
+| [Serial Number](#value:stu-serial-number)              |      32 |     32 | True      | 0       | UTF-8    |
+| [Product Name](#value:stu-product-name)                |      64 |    128 | True      | 0       | UTF-8    |
+| [OEM Free Use](#value:stu-oem-free-use)                |     192 |     64 | True      | 0       | -        |
 
 #### Version Numbers
 
