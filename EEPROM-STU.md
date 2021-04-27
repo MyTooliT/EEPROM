@@ -30,9 +30,9 @@ All of the values of the system configuration are set to the default values abov
 | Name                                                     | Address | Length | Read Only | Value   | Format   |
 | -------------------------------------------------------- | ------: | -----: | --------- | ------- | -------- |
 | GTIN                                                     |       0 |      8 | True      | 0       | Unsigned |
-| [Hardware Revision: Major](#value:stu-hardware-revision) |      13 |      1 | True      | -       | Unsigned |
-| [Hardware Revision: Minor](#value:stu-hardware-revision) |      14 |      1 | True      | -       | Unsigned |
-| [Hardware Revision: Patch](#value:stu-hardware-revision) |      15 |      1 | True      | -       | Unsigned |
+| [Hardware Version: Major](#value:stu-hardware-version) |      13 |      1 | True      | -       | Unsigned |
+| [Hardware Version: Minor](#value:stu-hardware-version) |      14 |      1 | True      | -       | Unsigned |
+| [Hardware Version: Patch](#value:stu-hardware-version) |      15 |      1 | True      | -       | Unsigned |
 | [Firmware Version: Major](#value:stu-firmware-version)   |      21 |      1 | True      | -       | Unsigned |
 | [Firmware Version: Minor](#value:stu-firmware-version)   |      22 |      1 | True      | -       | Unsigned |
 | [Firmware Version: Patch](#value:stu-firmware-version)   |      23 |      1 | True      | -       | Unsigned |
@@ -43,7 +43,7 @@ All of the values of the system configuration are set to the default values abov
 
 #### Version Numbers
 
-- <a name="value:stu-hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
+- <a name="value:stu-hardware-version"></a> **Hardware Version**: This number depends on the hardware version (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
 - <a name="value:stu-firmware-version"></a> **Firmware Version**: This number depends on the current [STU software version](https://github.com/MyTooliT/STU/releases)
 - <a name="value:stu-release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
 - <a name="value:stu-serial-number"></a> **Serial Number**: This text can be changed in the [configuration of ICOc][config]

@@ -35,9 +35,9 @@ All of the values of the system configuration are set to default values on reset
 | Name                                                     | Address | Length | Read Only | Value | Format   |
 | -------------------------------------------------------- | ------: | -----: | --------- | ----- | -------- |
 | GTIN                                                     |       0 |      8 | True      | 0     | Unsigned |
-| [Hardware Revision: Major](#value:sth-hardware-revision) |      13 |      1 | False     | -     | Unsigned |
-| [Hardware Revision: Minor](#value:sth-hardware-revision) |      14 |      1 | False     | -     | Unsigned |
-| [Hardware Revision: Patch](#value:sth-hardware-revision) |      15 |      1 | False     | -     | Unsigned |
+| [Hardware Version: Major](#value:sth-hardware-version) |      13 |      1 | False     | -     | Unsigned |
+| [Hardware Version: Minor](#value:sth-hardware-version) |      14 |      1 | False     | -     | Unsigned |
+| [Hardware Version: Patch](#value:sth-hardware-version) |      15 |      1 | False     | -     | Unsigned |
 | [Firmware Version: Major](#value:sth-firmware-version)   |      21 |      1 | False     | -     | Unsigned |
 | [Firmware Version: Minor](#value:sth-firmware-version)   |      22 |      1 | False     | -     | Unsigned |
 | [Firmware Version: Patch](#value:sth-firmware-version)   |      23 |      1 | False     | -     | Unsigned |
@@ -48,7 +48,7 @@ All of the values of the system configuration are set to default values on reset
 
 #### Version Numbers
 
-- <a name="value:sth-hardware-revision"></a> **Hardware Revision**: This number depends on the hardware revision (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
+- <a name="value:sth-hardware-version"></a> **Hardware Version**: This number depends on the hardware version (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
 - <a name="value:sth-firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
 - <a name="value:sth-release-name"></a> **Release Name**: This text can be changed in the [configuration of ICOc][config]
 - <a name="value:sth-serial-number"></a> **Serial Number**: This text can be changed in the [configuration of ICOc][config]
