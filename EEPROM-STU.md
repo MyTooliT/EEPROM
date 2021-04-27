@@ -1,8 +1,8 @@
-# STU EEPROM
+## STU EEPROM
 
 This file contains the default values for the STU EEPROM. For a more detailed description of the values, please take a look at the [description of the EEPROM layout](EEPROM.md).
 
-## Used Pages
+### Used Pages
 
 | Page Number | Page Name                                              |
 | ----------: | ------------------------------------------------------ |
@@ -12,20 +12,20 @@ This file contains the default values for the STU EEPROM. For a more detailed de
 
 <a name="page:stu-system-configuration"></a>
 
-### Page `System Configuration`
+#### Page `System Configuration`
 
 | Name          | Address | Length | Read Only | Value                 | Comment                      | Unit | Format |
 | ------------- | ------: | -----: | --------- | --------------------- | ---------------------------- | ---- | ------ |
 | EEPROM Status |       0 |      1 | True      | `0xac`                | Value for initialized EEPROM | -    |        |
 | STU Name      |       1 |      8 | False     | Firmware version name | e.g. `Valerie`               | -    | UTF-8  |
 
-#### Initialization
+##### Initialization
 
 All of the values of the system configuration are set to the default values above on reset of the STU, if the EEPROM status (byte) is **not** set to `Initialized` (`0xac`) or `Locked` (`0xca`). The values for the sleep times and advertisement times are set (to the same values the STH uses) on initialization too. However, since the STU is not battery-powered these timing values are probably not relevant.
 
 <a name="page:stu-product-data"></a>
 
-### Page `Product Data`
+#### Page `Product Data`
 
 | Name                                                   | Address | Length | Read Only | Value   | Format   |
 | ------------------------------------------------------ | ------: | -----: | --------- | ------- | -------- |
@@ -41,7 +41,7 @@ All of the values of the system configuration are set to the default values abov
 | [Product Name](#value:stu-product-name)                |      64 |    128 | True      | 0       | UTF-8    |
 | [OEM Free Use](#value:stu-oem-free-use)                |     192 |     64 | True      | 0       | -        |
 
-#### Version Numbers
+##### Version Numbers
 
 - <a name="value:stu-hardware-version"></a> **Hardware Version**: This number depends on the hardware version (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
 - <a name="value:stu-firmware-version"></a> **Firmware Version**: This number depends on the current [STU software version](https://github.com/MyTooliT/STU/releases)
@@ -54,7 +54,7 @@ All of the values of the system configuration are set to the default values abov
 
 <a name="page:stu-statistics"></a>
 
-### Page `Statistics`
+#### Page `Statistics`
 
 | Name                                                 | Address | Length | Read Only | Value | Unit | Format   |
 | ---------------------------------------------------- | ------: | -----: | --------- | ----: | ---- | -------- |

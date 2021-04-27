@@ -1,8 +1,8 @@
-# STH EEPROM
+## STH EEPROM
 
 This file contains the default values of the STH EEPROM. For a more detailed description of the values, please take a look at the [description of the EEPROM layout](EEPROM.md).
 
-## Used Pages
+### Used Pages
 
 | Page Number | Page Name                                              |
 | ----------: | ------------------------------------------------------ |
@@ -13,7 +13,7 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 
 <a name="page:sth-system-configuration"></a>
 
-### Page `System Configuration`
+#### Page `System Configuration`
 
 | Name                 | Address | Length | Read Only | Value                                                                                                                                | Comment                      | Unit | Format   |
 | -------------------- | ------: | -----: | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- | ---- | -------- |
@@ -24,13 +24,13 @@ This file contains the default values of the STH EEPROM. For a more detailed des
 | Sleep Time 2         |      15 |      4 | False     | 259200000                                                                                                                            | 3 days                       | ms   | Unsigned |
 | Advertisement Time 2 |      19 |      2 | False     | 4000                                                                                                                                 | 4 seconds                    | ms   | Unsigned |
 
-#### Initialization
+##### Initialization
 
 All of the values of the system configuration are set to default values on reset of the STH, if the EEPROM status (byte) is **not** set to `Initialized` (`0xac`) or `Locked` (`0xca`). The default values are described above. The name is set to the firmware version name (`Tanja`) and does not use the Base64 encoded Bluetooth MAC address.
 
 <a name="page:sth-product-data"></a>
 
-### Page `Product Data`
+#### Page `Product Data`
 
 | Name                                                   | Address | Length | Read Only | Value | Format   |
 | ------------------------------------------------------ | ------: | -----: | --------- | ----- | -------- |
@@ -46,7 +46,7 @@ All of the values of the system configuration are set to default values on reset
 | [Product Name](#value:sth-product-name)                |      64 |    128 | True      | 0     | UTF-8    |
 | [OEM Free Use](#value:sth-oem-free-use)                |     192 |     64 | True      | 0     | -        |
 
-#### Version Numbers
+##### Version Numbers
 
 - <a name="value:sth-hardware-version"></a> **Hardware Version**: This number depends on the hardware version (printed on the PCB). The value itself can be changed in the [main configuration file of ICOc][config]
 - <a name="value:sth-firmware-version"></a> **Firmware Version**: This number depends on the current [STH software version](https://github.com/MyTooliT/STH/releases)
@@ -59,7 +59,7 @@ All of the values of the system configuration are set to default values on reset
 
 <a name="page:sth-statistics"></a>
 
-### Page `Statistics`
+#### Page `Statistics`
 
 | Name                                                 | Address | Length | Read Only | Value | Unit | Format   |
 | ---------------------------------------------------- | ------: | -----: | --------- | ----: | ---- | -------- |
@@ -78,14 +78,14 @@ All of the values of the system configuration are set to default values on reset
 
 <a name="page:sth-calibration"></a>
 
-### Page `Calibration`
+#### Page `Calibration`
 
 | Name                                                   | Address | Length | Read Only | Value | Format |
 | ------------------------------------------------------ | ------: | -----: | --------- | ----- | ------ |
 | [Acceleration X: Slope](#value:acceleration-x-slope)   |       0 |      4 | False     | -     | Float  |
 | [Acceleration X: Offset](#value:acceleration-x-offset) |       4 |      4 | False     | -     | Float  |
 
-#### Acceleration
+##### Acceleration
 
 - <a name="value:acceleration-x-slope"></a> **Acceleration X: Slope**: A Acceleration increase for a single step according to the following formula:
 
