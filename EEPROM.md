@@ -37,6 +37,8 @@
 knitr::include_graphics("Pictures/STH States.svg", auto_pdf = TRUE)
 ```
 
+Source for power consumption values (Firmware `2.1.10`): [Bitrix24](https://mytoolit.bitrix24.de/workgroups/group/17/tasks/task/view/5175/?any=group%2F17%2Ftasks%2Ftask%2Fview%2F5175%2F&MID=19137#com19137)
+
 - `Sleep Time 1`: Time to switch from the `Disconnected` state to `Sleep Mode 1` (low power usage)
 - `Sleep Time 2`: Time switch from the `Sleep Mode 1` state to `Sleep Mode 2` (very low power usage)
 - `Advertisement Time 1`: Advertisement time in `Sleep Mode 1`
