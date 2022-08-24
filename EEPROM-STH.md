@@ -80,14 +80,18 @@ All of the values of the system configuration are set to default values on reset
 
 #### Page `Calibration`
 
-| Name                                                   | Address | Length | Read Only | Value | Format |
-| ------------------------------------------------------ | ------: | -----: | --------- | ----- | ------ |
-| [Acceleration X: Slope](#value:acceleration-x-slope)   |       0 |      4 | False     | -     | Float  |
-| [Acceleration X: Offset](#value:acceleration-x-offset) |       4 |      4 | False     | -     | Float  |
+| Name                                                 | Address | Length | Read Only | Value | Format |
+| ---------------------------------------------------- | ------: | -----: | --------- | ----- | ------ |
+| [Acceleration X: Slope](#value:acceleration-slope)   |       0 |      4 | False     | -     | Float  |
+| [Acceleration X: Offset](#value:acceleration-offset) |       4 |      4 | False     | -     | Float  |
+| [Acceleration Y: Slope](#value:acceleration-slope)   |       8 |      4 | False     | -     | Float  |
+| [Acceleration Y: Offset](#value:acceleration-offset) |      12 |      4 | False     | -     | Float  |
+| [Acceleration Z: Slope](#value:acceleration-slope)   |      16 |      4 | False     | -     | Float  |
+| [Acceleration Z: Offset](#value:acceleration-offset) |      20 |      4 | False     | -     | Float  |
 
 ##### Acceleration
 
-- <a name="value:acceleration-x-slope"></a> **Acceleration X: Slope**: A Acceleration increase for a single step according to the following formula:
+- <a name="value:acceleration-slope"></a> **Acceleration: Slope**: Acceleration increase for a single step in a certain direction (x, y, z) according to the following formula:
 
   $$
   \frac{a_{max}}{{ADC}_{max}}
@@ -98,10 +102,12 @@ All of the values of the system configuration are set to default values on reset
   - $a_{max}$ is the maximum acceleration difference (e.g. `200` for a ±100 g sensor)
   - ${{ADC}_{max}}$ is the maximum value of the ADC (e.g. `65553` (= `2¹⁶`) for a 16-bit analog-digital converter)
 
-- <a name="value:acceleration-x-offset"></a> **Acceleration X: Offset**: The negative offset of the acceleration value according to the following formula
+- <a name="value:acceleration-offset"></a> **Acceleration: Offset**: The negative offset of the acceleration value in a certain direction (x, y, z) according to the following formula:
 
   $$
   -\frac{a_{max}}{2}
   $$
 
   Here $a_{max}$ is the maximum acceleration difference (e.g. `100` for a ±50 g sensor)
+
+**Note:** Since the maximum acceleration difference ($a_{max}$) should be the same for each axis (for all acceleration sensor we use), the slope and offset values should be the same for each axis as well.
